@@ -5,10 +5,10 @@
   "description": "Example placeholder mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://effectimmnent.github.io/oresmonstersandmore",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["effectimminent"],
+  "credits": "effectimminent",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
