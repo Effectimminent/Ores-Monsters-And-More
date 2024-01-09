@@ -1,5 +1,5 @@
 {
   "variants": {
-    "normal": {"model": "Omam:copper_block"}
+    "normal": {"model": "omam:copper_block"}
   }
 }
