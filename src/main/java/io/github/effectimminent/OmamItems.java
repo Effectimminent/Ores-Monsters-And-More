@@ -7,6 +7,7 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class OmamItems {
+    //copper items
     public static Item copper_ingot;
 
     public static void init(){
