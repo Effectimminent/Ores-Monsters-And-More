@@ -1,7 +1,7 @@
 {
   "parent": "builtin/generated",
   "textures": {
-    "layer0": "Omam:items/copper_ingot"
+    "layer0": "Omam:item/copper_ingot"
   },
   "display": {
     "thirdperson": {
