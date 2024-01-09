@@ -17,20 +17,23 @@ public class OresMonstersAndMore {
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
 
-    public static final CreativeTabs items = new OMAMtab("OMAMtab");
+    public static final CreativeTabs items = new OmamTab("OmamTab");
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        OmamItems.init();
+        OmamItems.registerRenders();
     }
 
     @EventHandler
-    public void preInit(FMLInitializationEvent event)
+    public void Init(FMLInitializationEvent event)
     {
+        proxy.registerRenders();
     }
 
     @EventHandler
-    public void preInit(FMLPostInitializationEvent event)
+    public void postInit(FMLPostInitializationEvent event)
     {
 
     }

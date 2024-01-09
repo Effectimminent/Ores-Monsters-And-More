@@ -4,8 +4,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
-public class OMAMtab extends CreativeTabs {
-    public OMAMtab(String label) {
+public class OmamTab extends CreativeTabs {
+    public OmamTab(String label) {
         super("OMAM Items");
     }
 
