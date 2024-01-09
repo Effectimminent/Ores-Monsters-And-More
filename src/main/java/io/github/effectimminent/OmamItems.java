@@ -4,7 +4,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import scala.tools.nsc.doc.model.Public;
 
 public class OmamItems {
     public static Item copper_ingot;
@@ -15,7 +14,7 @@ public class OmamItems {
     public static void register(){
         GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
     }
-    public static  void registerRenders(){
+    public static void registerRenders(){
         registerRender(copper_ingot);
     }
     public static void registerRender(Item item)
