@@ -23,7 +23,7 @@ public class OresMonstersAndMore {
     public void preInit(FMLPreInitializationEvent event)
     {
         OmamItems.init();
-        OmamItems.registerRenders();
+        OmamItems.register();
     }
 
     @EventHandler
