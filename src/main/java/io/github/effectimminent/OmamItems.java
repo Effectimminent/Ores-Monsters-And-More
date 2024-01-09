@@ -16,7 +16,7 @@ public class OmamItems {
         GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
     }
     public static  void registerRenders(){
-        registerRender(copper_ingot);
+        registerRender(copper_ingot,0,"copper_ingot");
     }
     public static void registerRender(Item item)
     {
