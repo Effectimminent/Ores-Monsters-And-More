@@ -11,6 +11,6 @@ public class OmamTab extends CreativeTabs {
 
     @Override
     public Item getTabIconItem() {
-        return Items.nether_star;
+        return OmamItems.copper_ingot;
     }
 }

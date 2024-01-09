@@ -10,7 +10,7 @@ public class OmamItems {
     public static Item copper_ingot;
 
     public static void init(){
-        copper_ingot = new Item().setUnlocalizedName("copper_ingot");
+        copper_ingot = new Item().setUnlocalizedName("copper_ingot").setCreativeTab(OresMonstersAndMore.items);
     }
     public static void register(){
         GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
