@@ -24,6 +24,8 @@ public class OresMonstersAndMore {
     {
         OmamItems.init();
         OmamItems.register();
+        OmamBlocks.init();
+        OmamBlocks.register();
     }
 
     @EventHandler
