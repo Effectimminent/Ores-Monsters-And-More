@@ -3,7 +3,7 @@ package io.github.effectimminent.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-//made to actually match the property's of irl copper aka irons stats divend by 2.446875 the irl ratio of irons avg mechanical propertys (hardness tensil strength sheer strength) to coppers
+/**made to actually match the property's of irl copper aka irons stats divend by 2.446875 the irl ratio of irons avg mechanical propertys (hardness, tensil strength, sheer strength) to coppers*/
 public class BlockCopperBlock extends Block {
     public BlockCopperBlock(Material materialIn){
         super(materialIn);
