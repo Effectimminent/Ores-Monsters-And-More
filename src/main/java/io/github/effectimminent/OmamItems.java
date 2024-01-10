@@ -16,7 +16,7 @@ public class OmamItems {
     public static Item copper_hoe;
     public static Item copper_sword;
     public static final Item.ToolMaterial copperToolMaterial = EnumHelper.addToolMaterial("copperToolMaterial",1,102,2.45210728F,1,4);
-    //sapphire items
+    /**sapphire items these items were made using the actual mechanical property's of sapphire converted to minecraft sapphire is only slightly softer than diamond so its damage value was set to 0.5 less harvest level was kept the same for the aforementioned reason and sapphire is about twice as durable as diamond so its durability was doubled*/
     public static Item sapphire;
     public static Item sapphire_pickaxe;
     public static Item sapphire_axe;
