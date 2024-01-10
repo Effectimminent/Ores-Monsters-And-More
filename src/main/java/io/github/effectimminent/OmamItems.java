@@ -4,7 +4,6 @@ import io.github.effectimminent.Items.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -17,7 +16,14 @@ public class OmamItems {
     public static Item copper_hoe;
     public static Item copper_sword;
     public static final Item.ToolMaterial copperToolMaterial = EnumHelper.addToolMaterial("copperToolMaterial",1,102,2.45210728F,1,4);
-
+    //sapphire items
+    public static Item sapphire;
+    public static Item sapphire_pickaxe;
+    public static Item sapphire_axe;
+    public static Item sapphire_shovel;
+    public static Item sapphire_hoe;
+    public static Item sapphire_sword;
+    public static final Item.ToolMaterial sapphireToolMaterial = EnumHelper.addToolMaterial("sapphireToolMaterial",3,3000,7.0F,2.5F,10);
     public static void init(){
         copper_ingot = new Item().setUnlocalizedName("copper_ingot").setCreativeTab(OresMonstersAndMore.items);
         copper_pickaxe = new ItemCopperPickaxe(copperToolMaterial).setUnlocalizedName("copper_pickaxe").setCreativeTab(OresMonstersAndMore.items);
@@ -25,8 +31,12 @@ public class OmamItems {
         copper_shovel = new ItemCopperShovel(copperToolMaterial).setUnlocalizedName("copper_shovel").setCreativeTab(OresMonstersAndMore.items);
         copper_hoe = new ItemCopperHoe(copperToolMaterial).setUnlocalizedName("copper_hoe").setCreativeTab(OresMonstersAndMore.items);
         copper_sword = new ItemCopperSword(copperToolMaterial).setUnlocalizedName("copper_sword").setCreativeTab(OresMonstersAndMore.items);
-
-
+        sapphire = new Item().setUnlocalizedName("sapphire").setCreativeTab(OresMonstersAndMore.items);
+        sapphire_pickaxe = new ItemSapphirePickaxe(sapphireToolMaterial).setUnlocalizedName("sapphire_pickaxe").setCreativeTab(OresMonstersAndMore.items);
+        sapphire_axe = new ItemSapphireAxe(sapphireToolMaterial).setUnlocalizedName("sapphire_axe").setCreativeTab(OresMonstersAndMore.items);
+        sapphire_shovel = new ItemSapphireShovel(sapphireToolMaterial).setUnlocalizedName("sapphire_shovel").setCreativeTab(OresMonstersAndMore.items);
+        sapphire_hoe = new ItemSapphireHoe(sapphireToolMaterial).setUnlocalizedName("sapphire_hoe").setCreativeTab(OresMonstersAndMore.items);
+        sapphire_sword = new ItemSapphireSword(sapphireToolMaterial).setUnlocalizedName("sapphire_sword").setCreativeTab(OresMonstersAndMore.items);
     }
     public static void register(){
         GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
@@ -35,6 +45,12 @@ public class OmamItems {
         GameRegistry.registerItem(copper_shovel,copper_shovel.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(copper_hoe,copper_hoe.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(copper_sword,copper_sword.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(sapphire,sapphire.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(sapphire_pickaxe,sapphire_pickaxe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(sapphire_axe,sapphire_axe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(sapphire_shovel,sapphire_shovel.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(sapphire_hoe,sapphire_hoe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(sapphire_sword,sapphire_sword.getUnlocalizedName().substring(5));
     }
     public static void registerRenders(){
 
@@ -44,6 +60,12 @@ public class OmamItems {
         registerRender(copper_shovel);
         registerRender(copper_hoe);
         registerRender(copper_sword);
+        registerRender(sapphire);
+        registerRender(sapphire_pickaxe);
+        registerRender(sapphire_axe);
+        registerRender(sapphire_shovel);
+        registerRender(sapphire_hoe);
+        registerRender(sapphire_sword);
     }
     public static void registerRender(Item item) {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
