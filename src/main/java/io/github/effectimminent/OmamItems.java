@@ -36,12 +36,23 @@ public class OmamItems {
     public static Item emerald_shovel;
     public static Item emerald_hoe;
     public static Item emerald_sword;
-    public static final Item.ToolMaterial emeraldToolMaterial = EnumHelper.addToolMaterial("emeraldToolMaterial",3,750,6.4F,1.6F,100);
-    public static ItemArmor.ArmorMaterial emeraldArmorMaterial= EnumHelper.addArmorMaterial("emeraldArmorMaterial","Omam:emerald_layer_1",16,new int[]{3,7,6,3},100);
+    public static final Item.ToolMaterial emeraldToolMaterial = EnumHelper.addToolMaterial("emeraldToolMaterial",3,750,6.4F,2.4F,100);
+    public static ItemArmor.ArmorMaterial emeraldArmorMaterial= EnumHelper.addArmorMaterial("emeraldArmorMaterial","Omam:emerald_layer_1",26,new int[]{3,7,6,3},100);
     public static Item emerald_helmet;
     public static Item emerald_chestplate;
     public static Item emerald_leggings;
     public static Item emerald_boots;
+    public static Item lapis_pickaxe;
+    public static Item lapis_axe;
+    public static Item lapis_shovel;
+    public static Item lapis_hoe;
+    public static Item lapis_sword;
+    public static final Item.ToolMaterial lapisToolMaterial = EnumHelper.addToolMaterial("lapisToolMaterial",1,375,6.4F,1.5F,1000);
+    public static ItemArmor.ArmorMaterial lapisArmorMaterial= EnumHelper.addArmorMaterial("lapisArmorMaterial","Omam:lapis_layer_1",16,new int[]{1,4,3,2},1000);
+    public static Item lapis_helmet;
+    public static Item lapis_chestplate;
+    public static Item lapis_leggings;
+    public static Item lapis_boots;
 
     public static void init(){
         copper_ingot = new Item().setUnlocalizedName("copper_ingot").setCreativeTab(OresMonstersAndMore.items);
@@ -60,15 +71,24 @@ public class OmamItems {
         sapphire_chestplate = new ItemSapphireArmor(sapphireArmorMaterial,0,1).setUnlocalizedName("sapphire_chestplate").setCreativeTab(OresMonstersAndMore.items);
         sapphire_leggings = new ItemSapphireArmor(sapphireArmorMaterial,1,2).setUnlocalizedName("sapphire_leggings").setCreativeTab(OresMonstersAndMore.items);
         sapphire_boots = new ItemSapphireArmor(sapphireArmorMaterial,0,3).setUnlocalizedName("sapphire_boots").setCreativeTab(OresMonstersAndMore.items);
-        emerald_pickaxe = new ItemEmeraldPickaxe(emeraldToolMaterial).setUnlocalizedName("emerald_pickaxe").setCreativeTab(OresMonstersAndMore.items);
-        emerald_axe = new ItemEmeraldAxe(emeraldToolMaterial).setUnlocalizedName("emerald_axe").setCreativeTab(OresMonstersAndMore.items);
-        emerald_shovel = new ItemEmeraldShovel(emeraldToolMaterial).setUnlocalizedName("emerald_shovel").setCreativeTab(OresMonstersAndMore.items);
-        emerald_hoe = new ItemEmeraldHoe(emeraldToolMaterial).setUnlocalizedName("emerald_hoe").setCreativeTab(OresMonstersAndMore.items);
-        emerald_sword = new ItemEmeraldSword(emeraldToolMaterial).setUnlocalizedName("emerald_sword").setCreativeTab(OresMonstersAndMore.items);
+        emerald_pickaxe = new ItemLapisPickaxe(emeraldToolMaterial).setUnlocalizedName("emerald_pickaxe").setCreativeTab(OresMonstersAndMore.items);
+        emerald_axe = new ItemLapisAxe(emeraldToolMaterial).setUnlocalizedName("emerald_axe").setCreativeTab(OresMonstersAndMore.items);
+        emerald_shovel = new ItemLapisShovel(emeraldToolMaterial).setUnlocalizedName("emerald_shovel").setCreativeTab(OresMonstersAndMore.items);
+        emerald_hoe = new ItemLapisHoe(emeraldToolMaterial).setUnlocalizedName("emerald_hoe").setCreativeTab(OresMonstersAndMore.items);
+        emerald_sword = new ItemLapisSword(emeraldToolMaterial).setUnlocalizedName("emerald_sword").setCreativeTab(OresMonstersAndMore.items);
         emerald_helmet = new ItemEmeraldArmor(emeraldArmorMaterial,0,0).setUnlocalizedName("emerald_helmet").setCreativeTab(OresMonstersAndMore.items);
         emerald_chestplate = new ItemEmeraldArmor(emeraldArmorMaterial,0,1).setUnlocalizedName("emerald_chestplate").setCreativeTab(OresMonstersAndMore.items);
         emerald_leggings = new ItemEmeraldArmor(emeraldArmorMaterial,1,2).setUnlocalizedName("emerald_leggings").setCreativeTab(OresMonstersAndMore.items);
         emerald_boots = new ItemEmeraldArmor(emeraldArmorMaterial,0,3).setUnlocalizedName("emerald_boots").setCreativeTab(OresMonstersAndMore.items);
+        lapis_pickaxe = new ItemLapisPickaxe(lapisToolMaterial).setUnlocalizedName("lapis_pickaxe").setCreativeTab(OresMonstersAndMore.items);
+        lapis_axe = new ItemLapisAxe(lapisToolMaterial).setUnlocalizedName("lapis_axe").setCreativeTab(OresMonstersAndMore.items);
+        lapis_shovel = new ItemLapisShovel(lapisToolMaterial).setUnlocalizedName("lapis_shovel").setCreativeTab(OresMonstersAndMore.items);
+        lapis_hoe = new ItemLapisHoe(lapisToolMaterial).setUnlocalizedName("lapis_hoe").setCreativeTab(OresMonstersAndMore.items);
+        lapis_sword = new ItemLapisSword(lapisToolMaterial).setUnlocalizedName("lapis_sword").setCreativeTab(OresMonstersAndMore.items);
+        lapis_helmet = new ItemLapisArmor(lapisArmorMaterial,0,0).setUnlocalizedName("lapis_helmet").setCreativeTab(OresMonstersAndMore.items);
+        lapis_chestplate = new ItemLapisArmor(lapisArmorMaterial,0,1).setUnlocalizedName("lapis_chestplate").setCreativeTab(OresMonstersAndMore.items);
+        lapis_leggings = new ItemLapisArmor(lapisArmorMaterial,1,2).setUnlocalizedName("lapis_leggings").setCreativeTab(OresMonstersAndMore.items);
+        lapis_boots = new ItemLapisArmor(lapisArmorMaterial,0,3).setUnlocalizedName("lapis_boots").setCreativeTab(OresMonstersAndMore.items);
 
     }
     public static void register(){
@@ -97,6 +117,15 @@ public class OmamItems {
         GameRegistry.registerItem(emerald_chestplate,emerald_chestplate.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(emerald_leggings,emerald_leggings.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(emerald_boots,emerald_boots.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(lapis_pickaxe,lapis_pickaxe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(lapis_axe,lapis_axe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(lapis_shovel,lapis_shovel.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(lapis_hoe,lapis_hoe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(lapis_sword,lapis_sword.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(lapis_helmet,lapis_helmet.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(lapis_chestplate,lapis_chestplate.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(lapis_leggings,lapis_leggings.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(lapis_boots,lapis_boots.getUnlocalizedName().substring(5));
     }
     public static void registerRenders(){
 
@@ -125,6 +154,15 @@ public class OmamItems {
         registerRender(emerald_chestplate);
         registerRender(emerald_leggings);
         registerRender(emerald_boots);
+        registerRender(lapis_pickaxe);
+        registerRender(lapis_axe);
+        registerRender(lapis_shovel);
+        registerRender(lapis_hoe);
+        registerRender(lapis_sword);
+        registerRender(lapis_helmet);
+        registerRender(lapis_chestplate);
+        registerRender(lapis_leggings);
+        registerRender(lapis_boots);
 
     }
     public static void registerRender(Item item) {
