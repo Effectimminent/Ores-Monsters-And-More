@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class OmamBlocks {
     public static Block copper_block;
-    public static Block sapphire_block
+    public static Block sapphire_block;
 
     public static void init() {
         copper_block = new BlockCopperBlock(Material.iron).setUnlocalizedName("copper_block").setCreativeTab(OresMonstersAndMore.items);
