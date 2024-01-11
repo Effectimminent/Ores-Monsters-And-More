@@ -26,7 +26,7 @@ public class OmamItems {
     public static Item sapphire_hoe;
     public static Item sapphire_sword;
     public static final Item.ToolMaterial sapphireToolMaterial = EnumHelper.addToolMaterial("sapphireToolMaterial",3,3000,7.0F,2.5F,10);
-    public static ItemArmor.ArmorMaterial sapphireArmorMaterial= EnumHelper.addArmorMaterial("sapphireArmorMaterial","Omam:sapphire_layer_1",66,new int[]{6,16,12,6},50);
+    public static ItemArmor.ArmorMaterial sapphireArmorMaterial= EnumHelper.addArmorMaterial("sapphireArmorMaterial","Omam:sapphire_layer_1",66,new int[]{4,9,6,3},50);
     public static Item sapphire_helmet;
     public static Item sapphire_chestplate;
     public static Item sapphire_leggings;
