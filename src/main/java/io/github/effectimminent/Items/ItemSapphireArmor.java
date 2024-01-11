@@ -1,8 +1,10 @@
 package io.github.effectimminent.Items;
 
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 
 public class ItemSapphireArmor extends ItemArmor {
     public ItemSapphireArmor(ArmorMaterial material, int renderIndex, int armorType) {
@@ -15,5 +17,13 @@ public class ItemSapphireArmor extends ItemArmor {
             return "Omam:textures/armor/sapphire_armor_layer_2.png";
         }
         return "Omam:textures/armor/sapphire_armor_layer_1.png";
+    }
+    @Override
+    public void onUpdate(ItemStack stack, World world, Entity entity, int i, boolean bool) {
+        super.onUpdate(stack, world, entity, i, bool);
+
+        if (!stack.isItemEnchanted()) {
+            stack.addEnchantment(Enchantment.protection, 1);
+        }
     }
 }
