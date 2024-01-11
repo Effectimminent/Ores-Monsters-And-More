@@ -23,6 +23,23 @@ public class OmamRecipes {
         GameRegistry.addRecipe(new ItemStack(OmamItems.copper_shovel),new Object[] {"c  ", "s  ","s  ", 'c' ,OmamItems.copper_ingot, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.copper_shovel),new Object[] {" c ", " s "," s ", 'c' ,OmamItems.copper_ingot, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.copper_shovel),new Object[] {"  c", "  s","  s", 'c' ,OmamItems.copper_ingot, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_axe),new Object[] {"cc ", "cs "," s ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_axe),new Object[] {" cc", " sc"," s ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_axe),new Object[] {" cc", " cs"," s ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_axe),new Object[] {"cc ", "sc ","s  ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamBlocks.sapphire_block),new Object[] {"ccc", "ccc","ccc", 'c' ,OmamItems.sapphire});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_pickaxe),new Object[] {"ccc", " s "," s ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_hoe),new Object[] {"cc ", " s "," s ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_hoe),new Object[] {" cc", " s "," s ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_hoe),new Object[] {" cc", "  s","  s", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_hoe),new Object[] {"cc ", "s  ","s  ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_sword),new Object[] {"c  ", "c  ","s  ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_sword),new Object[] {" c ", " c "," s ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_sword),new Object[] {"  c", "  c","  s", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_shovel),new Object[] {"c  ", "s  ","s  ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_shovel),new Object[] {" c ", " s "," s ", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.sapphire_shovel),new Object[] {"  c", "  s","  s", 'c' ,OmamItems.sapphire, 's', Items.stick });
+        
 
     }
 }
