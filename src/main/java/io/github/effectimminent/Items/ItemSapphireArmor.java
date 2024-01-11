@@ -24,6 +24,7 @@ public class ItemSapphireArmor extends ItemArmor {
 
         if (!stack.isItemEnchanted()) {
             stack.addEnchantment(Enchantment.protection, 1);
+            stack.addEnchantment(Enchantment.projectileProtection,5);
         }
     }
 }
