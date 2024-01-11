@@ -26,12 +26,14 @@ public class OresMonstersAndMore {
         OmamItems.register();
         OmamBlocks.init();
         OmamBlocks.register();
+
     }
 
     @EventHandler
     public void Init(FMLInitializationEvent event)
     {
         proxy.registerRenders();
+        OmamRecipes.register();
     }
 
     @EventHandler
