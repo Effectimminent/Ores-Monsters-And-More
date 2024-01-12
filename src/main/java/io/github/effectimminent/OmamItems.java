@@ -59,7 +59,7 @@ public class OmamItems {
     public static Item ruby_hoe;
     public static Item ruby_sword;
     public static final Item.ToolMaterial rubyToolMaterial = EnumHelper.addToolMaterial("rubyToolMaterial",3,2950,7.5F,2.75F,50);
-    public static ItemArmor.ArmorMaterial rubyArmorMaterial= EnumHelper.addArmorMaterial("rubyArmorMaterial","Omam:ruby_layer_1",16,new int[]{4,9,6,3},50);
+    public static ItemArmor.ArmorMaterial rubyArmorMaterial= EnumHelper.addArmorMaterial("rubyArmorMaterial","Omam:ruby_layer_1",61,new int[]{4,9,6,3},50);
     public static Item ruby_helmet;
     public static Item ruby_chestplate;
     public static Item ruby_leggings;
