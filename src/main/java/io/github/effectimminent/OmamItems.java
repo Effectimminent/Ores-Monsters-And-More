@@ -91,7 +91,17 @@ public class OmamItems {
     public static Item topaz_chestplate;
     public static Item topaz_leggings;
     public static Item topaz_boots;
-
+    public static Item amethyst_pickaxe;
+    public static Item amethyst_axe;
+    public static Item amethyst_shovel;
+    public static Item amethyst_hoe;
+    public static Item amethyst_sword;
+    public static ItemArmor.ArmorMaterial amethystArmorMaterial= EnumHelper.addArmorMaterial("amethystArmorMaterial","Omam:amethyst_layer_1",6,new int[]{1,1,1,1},500);
+    public static final Item.ToolMaterial amethystToolMaterial = EnumHelper.addToolMaterial("amethystToolMaterial",3,300,6.4F,2.4F,500);
+    public static Item amethyst_helmet;
+    public static Item amethyst_chestplate;
+    public static Item amethyst_leggings;
+    public static Item amethyst_boots;
     public static void init(){
         copper_ingot = new Item().setUnlocalizedName("copper_ingot").setCreativeTab(OresMonstersAndMore.resources);
         copper_pickaxe = new ItemCopperPickaxe(copperToolMaterial).setUnlocalizedName("copper_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
@@ -158,10 +168,15 @@ public class OmamItems {
         topaz_chestplate = new ItemTopazArmor(topazArmorMaterial,0,1).setUnlocalizedName("topaz_chestplate").setCreativeTab(OresMonstersAndMore.gear);
         topaz_leggings = new ItemTopazArmor(topazArmorMaterial,1,2).setUnlocalizedName("topaz_leggings").setCreativeTab(OresMonstersAndMore.gear);
         topaz_boots = new ItemTopazArmor(topazArmorMaterial,0,3).setUnlocalizedName("topaz_boots").setCreativeTab(OresMonstersAndMore.gear);
-        zircon_pickaxe = new ItemZirconPickaxe(zirconToolMaterial).setUnlocalizedName("zircon_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
-        
-
-
+        amethyst_pickaxe = new ItemAmethystPickaxe(amethystToolMaterial).setUnlocalizedName("amethyst_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
+        amethyst_axe = new ItemAmethystAxe(amethystToolMaterial).setUnlocalizedName("amethyst_axe").setCreativeTab(OresMonstersAndMore.gear);
+        amethyst_shovel = new ItemAmethystShovel(amethystToolMaterial).setUnlocalizedName("amethyst_shovel").setCreativeTab(OresMonstersAndMore.gear);
+        amethyst_hoe = new ItemAmethystHoe(amethystToolMaterial).setUnlocalizedName("amethyst_hoe").setCreativeTab(OresMonstersAndMore.gear);
+        amethyst_sword = new ItemAmethystSword(amethystToolMaterial).setUnlocalizedName("amethyst_sword").setCreativeTab(OresMonstersAndMore.gear);
+        amethyst_helmet = new ItemAmethystArmor(amethystArmorMaterial,0,0).setUnlocalizedName("amethyst_helmet").setCreativeTab(OresMonstersAndMore.gear);
+        amethyst_chestplate = new ItemAmethystArmor(amethystArmorMaterial,0,1).setUnlocalizedName("amethyst_chestplate").setCreativeTab(OresMonstersAndMore.gear);
+        amethyst_leggings = new ItemAmethystArmor(amethystArmorMaterial,1,2).setUnlocalizedName("amethyst_leggings").setCreativeTab(OresMonstersAndMore.gear);
+        amethyst_boots = new ItemAmethystArmor(amethystArmorMaterial,0,3).setUnlocalizedName("amethyst_boots").setCreativeTab(OresMonstersAndMore.gear);
     }
     public static void register(){
         GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
@@ -229,6 +244,15 @@ public class OmamItems {
         GameRegistry.registerItem(topaz_chestplate,topaz_chestplate.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(topaz_leggings,topaz_leggings.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(topaz_boots,topaz_boots.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst_pickaxe,amethyst_pickaxe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst_axe,amethyst_axe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst_shovel,amethyst_shovel.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst_hoe,amethyst_hoe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst_sword,amethyst_sword.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst_helmet,amethyst_helmet.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst_chestplate,amethyst_chestplate.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst_leggings,amethyst_leggings.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst_boots,amethyst_boots.getUnlocalizedName().substring(5));
     }
     public static void registerRenders(){
 
@@ -297,6 +321,15 @@ public class OmamItems {
         registerRender(topaz_chestplate);
         registerRender(topaz_leggings);
         registerRender(topaz_boots);
+        registerRender(amethyst_pickaxe);
+        registerRender(amethyst_axe);
+        registerRender(amethyst_shovel);
+        registerRender(amethyst_hoe);
+        registerRender(amethyst_sword);
+        registerRender(amethyst_helmet);
+        registerRender(amethyst_chestplate);
+        registerRender(amethyst_leggings);
+        registerRender(amethyst_boots);
 
     }
     public static void registerRender(Item item) {
