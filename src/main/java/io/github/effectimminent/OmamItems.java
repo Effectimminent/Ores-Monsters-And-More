@@ -69,6 +69,28 @@ public class OmamItems {
     public static Item ruby_chestplate;
     public static Item ruby_leggings;
     public static Item ruby_boots;
+    public static Item zircon_pickaxe;
+    public static Item zircon_axe;
+    public static Item zircon_shovel;
+    public static Item zircon_hoe;
+    public static Item zircon_sword;
+    public static final Item.ToolMaterial zirconToolMaterial = EnumHelper.addToolMaterial("zirconToolMaterial",3,743,6.0F,2.25F,10);
+    public static ItemArmor.ArmorMaterial zirconArmorMaterial= EnumHelper.addArmorMaterial("zirconArmorMaterial","Omam:zircon_layer_1",26,new int[]{3,7,6,3},10);
+    public static Item zircon_helmet;
+    public static Item zircon_chestplate;
+    public static Item zircon_leggings;
+    public static Item zircon_boots;
+    public static Item topaz_pickaxe;
+    public static Item topaz_axe;
+    public static Item topaz_shovel;
+    public static Item topaz_hoe;
+    public static Item topaz_sword;
+    public static final Item.ToolMaterial topazToolMaterial = EnumHelper.addToolMaterial("topazToolMaterial",3,750,6.4F,2.4F,10);
+    public static ItemArmor.ArmorMaterial topazArmorMaterial= EnumHelper.addArmorMaterial("topazArmorMaterial","Omam:topaz_layer_1",61,new int[]{4,9,6,3},10);
+    public static Item topaz_helmet;
+    public static Item topaz_chestplate;
+    public static Item topaz_leggings;
+    public static Item topaz_boots;
 
     public static void init(){
         copper_ingot = new Item().setUnlocalizedName("copper_ingot").setCreativeTab(OresMonstersAndMore.resources);
@@ -118,6 +140,26 @@ public class OmamItems {
         ruby_chestplate = new ItemRubyArmor(rubyArmorMaterial,0,1).setUnlocalizedName("ruby_chestplate").setCreativeTab(OresMonstersAndMore.gear);
         ruby_leggings = new ItemRubyArmor(rubyArmorMaterial,1,2).setUnlocalizedName("ruby_leggings").setCreativeTab(OresMonstersAndMore.gear);
         ruby_boots = new ItemRubyArmor(rubyArmorMaterial,0,3).setUnlocalizedName("ruby_boots").setCreativeTab(OresMonstersAndMore.gear);
+        zircon_pickaxe = new ItemZirconPickaxe(zirconToolMaterial).setUnlocalizedName("zircon_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
+        zircon_axe = new ItemZirconAxe(zirconToolMaterial).setUnlocalizedName("zircon_axe").setCreativeTab(OresMonstersAndMore.gear);
+        zircon_shovel = new ItemZirconShovel(zirconToolMaterial).setUnlocalizedName("zircon_shovel").setCreativeTab(OresMonstersAndMore.gear);
+        zircon_hoe = new ItemZirconHoe(zirconToolMaterial).setUnlocalizedName("zircon_hoe").setCreativeTab(OresMonstersAndMore.gear);
+        zircon_sword = new ItemZirconSword(zirconToolMaterial).setUnlocalizedName("zircon_sword").setCreativeTab(OresMonstersAndMore.gear);
+        zircon_helmet = new ItemZirconArmor(zirconArmorMaterial,0,0).setUnlocalizedName("zircon_helmet").setCreativeTab(OresMonstersAndMore.gear);
+        zircon_chestplate = new ItemZirconArmor(zirconArmorMaterial,0,1).setUnlocalizedName("zircon_chestplate").setCreativeTab(OresMonstersAndMore.gear);
+        zircon_leggings = new ItemZirconArmor(zirconArmorMaterial,1,2).setUnlocalizedName("zircon_leggings").setCreativeTab(OresMonstersAndMore.gear);
+        zircon_boots = new ItemZirconArmor(zirconArmorMaterial,0,3).setUnlocalizedName("zircon_boots").setCreativeTab(OresMonstersAndMore.gear);
+        topaz_pickaxe = new ItemTopazPickaxe(topazToolMaterial).setUnlocalizedName("topaz_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
+        topaz_axe = new ItemTopazAxe(topazToolMaterial).setUnlocalizedName("topaz_axe").setCreativeTab(OresMonstersAndMore.gear);
+        topaz_shovel = new ItemTopazShovel(topazToolMaterial).setUnlocalizedName("topaz_shovel").setCreativeTab(OresMonstersAndMore.gear);
+        topaz_hoe = new ItemTopazHoe(topazToolMaterial).setUnlocalizedName("topaz_hoe").setCreativeTab(OresMonstersAndMore.gear);
+        topaz_sword = new ItemTopazSword(topazToolMaterial).setUnlocalizedName("topaz_sword").setCreativeTab(OresMonstersAndMore.gear);
+        topaz_helmet = new ItemTopazArmor(topazArmorMaterial,0,0).setUnlocalizedName("topaz_helmet").setCreativeTab(OresMonstersAndMore.gear);
+        topaz_chestplate = new ItemTopazArmor(topazArmorMaterial,0,1).setUnlocalizedName("topaz_chestplate").setCreativeTab(OresMonstersAndMore.gear);
+        topaz_leggings = new ItemTopazArmor(topazArmorMaterial,1,2).setUnlocalizedName("topaz_leggings").setCreativeTab(OresMonstersAndMore.gear);
+        topaz_boots = new ItemTopazArmor(topazArmorMaterial,0,3).setUnlocalizedName("topaz_boots").setCreativeTab(OresMonstersAndMore.gear);
+        zircon_pickaxe = new ItemZirconPickaxe(zirconToolMaterial).setUnlocalizedName("zircon_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
+        
 
 
     }
@@ -169,6 +211,24 @@ public class OmamItems {
         GameRegistry.registerItem(ruby_chestplate,ruby_chestplate.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(ruby_leggings,ruby_leggings.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(ruby_boots,ruby_boots.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon_pickaxe,zircon_pickaxe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon_axe,zircon_axe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon_shovel,zircon_shovel.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon_hoe,zircon_hoe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon_sword,zircon_sword.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon_helmet,zircon_helmet.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon_chestplate,zircon_chestplate.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon_leggings,zircon_leggings.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon_boots,zircon_boots.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(topaz_pickaxe,topaz_pickaxe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(topaz_axe,topaz_axe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(topaz_shovel,topaz_shovel.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(topaz_hoe,topaz_hoe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(topaz_sword,topaz_sword.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(topaz_helmet,topaz_helmet.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(topaz_chestplate,topaz_chestplate.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(topaz_leggings,topaz_leggings.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(topaz_boots,topaz_boots.getUnlocalizedName().substring(5));
     }
     public static void registerRenders(){
 
@@ -219,6 +279,24 @@ public class OmamItems {
         registerRender(ruby_chestplate);
         registerRender(ruby_leggings);
         registerRender(ruby_boots);
+        registerRender(zircon_pickaxe);
+        registerRender(zircon_axe);
+        registerRender(zircon_shovel);
+        registerRender(zircon_hoe);
+        registerRender(zircon_sword);
+        registerRender(zircon_helmet);
+        registerRender(zircon_chestplate);
+        registerRender(zircon_leggings);
+        registerRender(zircon_boots);
+        registerRender(topaz_pickaxe);
+        registerRender(topaz_axe);
+        registerRender(topaz_shovel);
+        registerRender(topaz_hoe);
+        registerRender(topaz_sword);
+        registerRender(topaz_helmet);
+        registerRender(topaz_chestplate);
+        registerRender(topaz_leggings);
+        registerRender(topaz_boots);
 
     }
     public static void registerRender(Item item) {
