@@ -19,7 +19,7 @@ public class OresMonstersAndMore {
 
     public static final CreativeTabs items = new OmamItemTab("OmamItemTab");
     public static final CreativeTabs resources = new OmamResourcesTab("OmamResourcesTab");
-    public static final CreativeTabs gear = new OmamResourcesTab("OmamGearTab");
+    public static final CreativeTabs gear = new OmamGearTab("OmamGearTab");
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
