@@ -17,7 +17,9 @@ public class OresMonstersAndMore {
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
 
-    public static final CreativeTabs items = new OmamTab("OmamTab");
+    public static final CreativeTabs items = new OmamItemTab("OmamItemTab");
+    public static final CreativeTabs resources = new OmamResourcesTab("OmamResourcesTab");
+    public static final CreativeTabs gear = new OmamResourcesTab("OmamGearTab");
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
