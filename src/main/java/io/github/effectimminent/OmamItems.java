@@ -16,7 +16,12 @@ public class OmamItems {
     public static Item copper_shovel;
     public static Item copper_hoe;
     public static Item copper_sword;
+    public static Item copper_helmet;
+    public static Item copper_chestplate;
+    public static Item copper_leggings;
+    public static Item copper_boots;
     public static final Item.ToolMaterial copperToolMaterial = EnumHelper.addToolMaterial("copperToolMaterial",1,102,2.45210728F,1,4);
+    public static ItemArmor.ArmorMaterial copperArmorMaterial= EnumHelper.addArmorMaterial("copperArmorMaterial","Omam:copper_layer_1",6,new int[]{1,2,2,1},4);
     //sapphire items
     /** these items were made using the actual mechanical property's of sapphire converted to minecraft sapphire is only slightly softer than diamond so its damage value was set to 0.5 less and efficiency was set one lower harvest level was kept the same for the aforementioned reason and sapphire is about twice as durable as diamond so its durability was doubled*/
     public static Item sapphire;
@@ -72,6 +77,10 @@ public class OmamItems {
         copper_shovel = new ItemCopperShovel(copperToolMaterial).setUnlocalizedName("copper_shovel").setCreativeTab(OresMonstersAndMore.gear);
         copper_hoe = new ItemCopperHoe(copperToolMaterial).setUnlocalizedName("copper_hoe").setCreativeTab(OresMonstersAndMore.gear);
         copper_sword = new ItemCopperSword(copperToolMaterial).setUnlocalizedName("copper_sword").setCreativeTab(OresMonstersAndMore.gear);
+        copper_helmet = new ItemCopperArmor(copperArmorMaterial,0,0).setUnlocalizedName("copper_helmet").setCreativeTab(OresMonstersAndMore.gear);
+        copper_chestplate = new ItemCopperArmor(copperArmorMaterial,0,1).setUnlocalizedName("copper_chestplate").setCreativeTab(OresMonstersAndMore.gear);
+        copper_leggings = new ItemCopperArmor(copperArmorMaterial,1,2).setUnlocalizedName("copper_leggings").setCreativeTab(OresMonstersAndMore.gear);
+        copper_boots = new ItemCopperArmor(copperArmorMaterial,0,3).setUnlocalizedName("copper_boots").setCreativeTab(OresMonstersAndMore.gear);
         sapphire = new Item().setUnlocalizedName("sapphire").setCreativeTab(OresMonstersAndMore.resources);
         sapphire_pickaxe = new ItemSapphirePickaxe(sapphireToolMaterial).setUnlocalizedName("sapphire_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
         sapphire_axe = new ItemSapphireAxe(sapphireToolMaterial).setUnlocalizedName("sapphire_axe").setCreativeTab(OresMonstersAndMore.gear);
@@ -119,6 +128,10 @@ public class OmamItems {
         GameRegistry.registerItem(copper_shovel,copper_shovel.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(copper_hoe,copper_hoe.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(copper_sword,copper_sword.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(copper_helmet,copper_helmet.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(copper_chestplate,copper_chestplate.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(copper_leggings,copper_leggings.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(copper_boots,copper_boots.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(sapphire,sapphire.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(sapphire_pickaxe,sapphire_pickaxe.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(sapphire_axe,sapphire_axe.getUnlocalizedName().substring(5));
@@ -165,6 +178,10 @@ public class OmamItems {
         registerRender(copper_shovel);
         registerRender(copper_hoe);
         registerRender(copper_sword);
+        registerRender(copper_helmet);
+        registerRender(copper_chestplate);
+        registerRender(copper_leggings);
+        registerRender(copper_boots);
         registerRender(sapphire);
         registerRender(sapphire_pickaxe);
         registerRender(sapphire_axe);
