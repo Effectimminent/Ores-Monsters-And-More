@@ -34,6 +34,7 @@ public class AutoArmorToolRecipe {
             Item chestplate = (Item) OmamItems.class.getField(chestplateName).get(null);
             Item leggings = (Item) OmamItems.class.getField(leggingsName).get(null);
             Item boots = (Item) OmamItems.class.getField(bootsName).get(null);
+            System.out.println("RRRRRRRRRRRRRRRRRRRRR"+ingotgem);
 
             // Use 'sword' as needed...
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {"cc ", "cs "," s ", 'c' ,ingotgem, 's', Items.stick });
