@@ -14,8 +14,8 @@ public class ItemCopperArmor extends ItemArmor {
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
         if (this.armorType == 2){
-            return "Omam:textures/armor/sapphire_armor_layer_2.png";
+            return "Omam:textures/model/armor/copper_armor_layer_2.png";
         }
-        return "Omam:textures/armor/sapphire_armor_layer_1.png";
+        return "Omam:textures/model/armor/copper_armor_layer_1.png";
     }
 }

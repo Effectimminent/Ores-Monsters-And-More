@@ -11,8 +11,8 @@ public class ItemLapisArmor extends ItemArmor {
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
         if (this.armorType == 2){
-            return "Omam:textures/armor/lapis_armor_layer_2.png";
+            return "Omam:textures/model/armor/lapis_armor_layer_2.png";
         }
-        return "Omam:textures/armor/lapis_armor_layer_1.png";
+        return "Omam:textures/model/armor/lapis_armor_layer_1.png";
     }
 }

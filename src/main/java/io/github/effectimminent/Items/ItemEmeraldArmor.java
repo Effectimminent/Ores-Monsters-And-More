@@ -11,8 +11,8 @@ public class ItemEmeraldArmor extends ItemArmor {
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
         if (this.armorType == 2){
-            return "Omam:textures/armor/emerald_armor_layer_2.png";
+            return "Omam:textures/model/armor/emerald_armor_layer_2.png";
         }
-        return "Omam:textures/armor/emerald_armor_layer_1.png";
+        return "Omam:textures/model/armor/emerald_armor_layer_1.png";
     }
 }

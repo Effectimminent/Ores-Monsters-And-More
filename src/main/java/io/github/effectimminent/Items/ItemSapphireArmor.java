@@ -14,9 +14,9 @@ public class ItemSapphireArmor extends ItemArmor {
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
         if (this.armorType == 2){
-            return "Omam:textures/armor/sapphire_armor_layer_2.png";
+            return "Omam:textures/model/armor/sapphire_armor_layer_2.png";
         }
-        return "Omam:textures/armor/sapphire_armor_layer_1.png";
+        return "Omam:textures/model/armor/sapphire_armor_layer_1.png";
     }
     @Override
     public void onUpdate(ItemStack stack, World world, Entity entity, int i, boolean bool) {
