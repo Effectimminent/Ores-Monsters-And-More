@@ -8,8 +8,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class OmamRecipes {
     public static void  register()
     {
-        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_axe),new Object[] {"cc ", "cs "," s ", 'c' ,Items.dye,1 ,4, 's', Items.stick });
-        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_axe),new Object[] {" cc", " sc"," s ", 'c' ,Items.dye,1 ,4, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_axe),new Object[] {"cc ", "cs "," s ", 'c' ,new ItemStack(Items.dye, 1, 4), 's', Items.stick });
+       /* GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_axe),new Object[] {" cc", " sc"," s ", 'c' ,Items.dye,1 ,4, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_axe),new Object[] {" cc", " cs"," s ", 'c' ,Items.dye,1 ,4, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_axe),new Object[] {"cc ", "sc ","s  ", 'c' ,Items.dye,1 ,4, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_pickaxe),new Object[] {"ccc", " s "," s ", 'c' ,Items.dye,1 ,4, 's', Items.stick });
@@ -22,7 +22,7 @@ public class OmamRecipes {
         GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_sword),new Object[] {"  c", "  c","  s", 'c' ,Items.dye,1 ,4, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_shovel),new Object[] {"c  ", "s  ","s  ", 'c' ,Items.dye,1 ,4, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_shovel),new Object[] {" c ", " s "," s ", 'c' ,Items.dye,1 ,4, 's', Items.stick });
-        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_shovel),new Object[] {"  c", "  s","  s", 'c' ,Items.dye,1 ,4, 's', Items.stick });
+        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_shovel),new Object[] {"  c", "  s","  s", 'c' ,Items.dye,1 ,4, 's', Items.stick });*/
         GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_axe),new Object[] {"cc ", "cs "," s ", 'c' ,Items.emerald, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_axe),new Object[] {" cc", " sc"," s ", 'c' ,Items.emerald, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_axe),new Object[] {" cc", " cs"," s ", 'c' ,Items.emerald, 's', Items.stick });
