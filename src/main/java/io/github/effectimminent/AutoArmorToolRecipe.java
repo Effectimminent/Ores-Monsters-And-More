@@ -24,7 +24,7 @@ public class AutoArmorToolRecipe {
             String bootsName =materialIn + "_boots";
 
             Item ingotgem = (Item) OmamItems.class.getField(ingotgemName).get(null);
-            Item block = (Item) OmamItems.class.getField(blockName).get(null);
+            //Item block = (Item) OmamItems.class.getField(blockName).get(null);
             Item sword = (Item) OmamItems.class.getField(swordName).get(null);
             Item pickaxe = (Item) OmamItems.class.getField(pickaxeName).get(null);
             Item axe = (Item) OmamItems.class.getField(axeName).get(null);

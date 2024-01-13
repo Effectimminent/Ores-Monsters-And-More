@@ -28,7 +28,6 @@ public class OresMonstersAndMore {
         OmamItems.register();
         OmamBlocks.init();
         OmamBlocks.register();
-        AutoArmorToolRecipe.addGear("ruby");
 
     }
 
@@ -37,6 +36,7 @@ public class OresMonstersAndMore {
     {
         proxy.registerRenders();
         OmamRecipes.register();
+        AutoArmorToolRecipe.addGear("ruby");
     }
 
     @EventHandler
