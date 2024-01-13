@@ -37,6 +37,7 @@ public class AutoArmorToolRecipe {
             Item boots = (Item) OmamItems.class.getField(bootsName).get(null);
             //System.out.println("RRRRRRRRRRRRRRRRRRRRR"+ingotgem);
 
+            GameRegistry.addRecipe(new ItemStack(block),new Object[] {"ccc", "ccc","ccc", 'c' ,ingotgem});
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {"cc ", "cs "," s ", 'c' ,ingotgem, 's', Items.stick });
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {" cc", " sc"," s ", 'c' ,ingotgem, 's', Items.stick });
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {" cc", " cs"," s ", 'c' ,ingotgem, 's', Items.stick });
