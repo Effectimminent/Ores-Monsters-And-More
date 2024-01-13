@@ -52,7 +52,7 @@ public class OmamItems {
     public static Item lapis_shovel;
     public static Item lapis_hoe;
     public static Item lapis_sword;
-    public static final Item.ToolMaterial lapisToolMaterial = EnumHelper.addToolMaterial("lapisToolMaterial",1,375,6.4F,1.5F,1000);
+    public static final Item.ToolMaterial lapisToolMaterial = EnumHelper.addToolMaterial("lapisToolMaterial",1,375,3.2F,1.5F,1000);
     public static ItemArmor.ArmorMaterial lapisArmorMaterial= EnumHelper.addArmorMaterial("lapisArmorMaterial","Omam:lapis_layer_1",16,new int[]{1,4,3,2},1000);
     public static Item lapis_helmet;
     public static Item lapis_chestplate;
