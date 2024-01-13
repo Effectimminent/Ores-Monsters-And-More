@@ -35,10 +35,10 @@ public class OmamBlocks {
     public static void registerRenders(){
         registerRender(copper_block,0,"copper_block");
         registerRender(sapphire_block,0,"sapphire_block");
-        registerRender(ruby_block,0,"copper_block");
-        registerRender(topaz_block,0,"sapphire_block");
-        registerRender(zircon_block,0,"copper_block");
-        registerRender(amethyst_block,0,"sapphire_block");
+        registerRender(ruby_block,0,"ruby_block");
+        registerRender(topaz_block,0,"topaz_block");
+        registerRender(zircon_block,0,"zircon_block");
+        registerRender(amethyst_block,0,"amethyst_block");
     }
     public static void registerRender(Block block,int meta,String filename)
     {
