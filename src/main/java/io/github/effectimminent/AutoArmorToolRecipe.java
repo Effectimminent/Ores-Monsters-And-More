@@ -53,6 +53,12 @@ public class AutoArmorToolRecipe {
             GameRegistry.addRecipe(new ItemStack(shovel),new Object[] {"c  ", "s  ","s  ", 'c' ,ingotgem, 's', Items.stick });
             GameRegistry.addRecipe(new ItemStack(shovel),new Object[] {" c ", " s "," s ", 'c' ,ingotgem, 's', Items.stick });
             GameRegistry.addRecipe(new ItemStack(shovel),new Object[] {"  c", "  s","  s", 'c' ,ingotgem, 's', Items.stick });
+            GameRegistry.addRecipe(new ItemStack(helmet),new Object[] {"ccc", "c c","   ", 'c' ,ingotgem});
+            GameRegistry.addRecipe(new ItemStack(helmet),new Object[] {"   ", "ccc","c c", 'c' ,ingotgem});
+            GameRegistry.addRecipe(new ItemStack(chestplate),new Object[] {"c c", "ccc","ccc", 'c' ,ingotgem});
+            GameRegistry.addRecipe(new ItemStack(leggings),new Object[] {"ccc", "c c","c c", 'c' ,ingotgem});
+            GameRegistry.addRecipe(new ItemStack(boots),new Object[] {"c c", "c c","   ", 'c' ,ingotgem});
+            GameRegistry.addRecipe(new ItemStack(boots),new Object[] {"   ", "c c","c c", 'c' ,ingotgem});
 
         } catch (NoSuchFieldException e) {
             System.out.println("ERROR MISSING ITEM FOR CRAFTING RECIPE INPUT OR OUTPUT");
