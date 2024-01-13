@@ -10,10 +10,10 @@ import java.lang.reflect.Field;
 
 public class AutoArmorToolRecipe {
 
-    public static void addGear(String materialIn) {
+    public static void addGear(String materialIn,Boolean addBlock) {
         try {
             String ingotgemName =materialIn;
-            String blockName =materialIn + "_block";
+
             String swordName =materialIn + "_sword";
             String pickaxeName =materialIn + "_pickaxe";
             String axeName =materialIn + "_axe";
@@ -25,7 +25,6 @@ public class AutoArmorToolRecipe {
             String bootsName =materialIn + "_boots";
 
             Item ingotgem = (Item) OmamItems.class.getField(ingotgemName).get(null);
-            Block block = (Block) OmamBlocks.class.getField(blockName).get(null);
             Item sword = (Item) OmamItems.class.getField(swordName).get(null);
             Item pickaxe = (Item) OmamItems.class.getField(pickaxeName).get(null);
             Item axe = (Item) OmamItems.class.getField(axeName).get(null);
@@ -37,7 +36,7 @@ public class AutoArmorToolRecipe {
             Item boots = (Item) OmamItems.class.getField(bootsName).get(null);
             //System.out.println("RRRRRRRRRRRRRRRRRRRRR"+ingotgem);
 
-            GameRegistry.addRecipe(new ItemStack(block),new Object[] {"ccc", "ccc","ccc", 'c' ,ingotgem});
+
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {"cc ", "cs "," s ", 'c' ,ingotgem, 's', Items.stick });
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {" cc", " sc"," s ", 'c' ,ingotgem, 's', Items.stick });
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {" cc", " cs"," s ", 'c' ,ingotgem, 's', Items.stick });
@@ -59,7 +58,11 @@ public class AutoArmorToolRecipe {
             GameRegistry.addRecipe(new ItemStack(leggings),new Object[] {"ccc", "c c","c c", 'c' ,ingotgem});
             GameRegistry.addRecipe(new ItemStack(boots),new Object[] {"c c", "c c","   ", 'c' ,ingotgem});
             GameRegistry.addRecipe(new ItemStack(boots),new Object[] {"   ", "c c","c c", 'c' ,ingotgem});
-
+            if (addBlock == true) {
+                String blockName = materialIn + "_block";
+                Block block = (Block) OmamBlocks.class.getField(blockName).get(null);
+                GameRegistry.addRecipe(new ItemStack(block), new Object[]{"ccc", "ccc", "ccc", 'c', ingotgem});
+            }
         } catch (NoSuchFieldException e) {
             System.out.println("ERROR MISSING ITEM FOR CRAFTING RECIPE INPUT OR OUTPUT");
             e.printStackTrace();

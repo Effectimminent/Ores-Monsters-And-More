@@ -36,7 +36,12 @@ public class OresMonstersAndMore {
     {
         proxy.registerRenders();
         OmamRecipes.register();
-        AutoArmorToolRecipe.addGear("ruby");
+        AutoArmorToolRecipe.addGear("ruby",true);
+        AutoArmorToolRecipe.addGear("topaz",true);
+        AutoArmorToolRecipe.addGear("zircon",true);
+        AutoArmorToolRecipe.addGear("emerald",false);
+        AutoArmorToolRecipe.addGear("lapis",false);
+        AutoArmorToolRecipe.addGear("amethyst",true);
     }
 
     @EventHandler
