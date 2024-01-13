@@ -102,6 +102,10 @@ public class OmamItems {
     public static Item amethyst_chestplate;
     public static Item amethyst_leggings;
     public static Item amethyst_boots;
+    public static Item ruby;
+    public static Item topaz;
+    public static Item zircon;
+    public static Item amethyst;
     public static void init(){
         copper_ingot = new Item().setUnlocalizedName("copper_ingot").setCreativeTab(OresMonstersAndMore.resources);
         copper_pickaxe = new ItemCopperPickaxe(copperToolMaterial).setUnlocalizedName("copper_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
@@ -177,6 +181,10 @@ public class OmamItems {
         amethyst_chestplate = new ItemAmethystArmor(amethystArmorMaterial,0,1).setUnlocalizedName("amethyst_chestplate").setCreativeTab(OresMonstersAndMore.gear);
         amethyst_leggings = new ItemAmethystArmor(amethystArmorMaterial,1,2).setUnlocalizedName("amethyst_leggings").setCreativeTab(OresMonstersAndMore.gear);
         amethyst_boots = new ItemAmethystArmor(amethystArmorMaterial,0,3).setUnlocalizedName("amethyst_boots").setCreativeTab(OresMonstersAndMore.gear);
+        amethyst = new Item().setUnlocalizedName("amethyst").setCreativeTab(OresMonstersAndMore.resources);
+        ruby = new Item().setUnlocalizedName("ruby").setCreativeTab(OresMonstersAndMore.resources);
+        topaz = new Item().setUnlocalizedName("topaz").setCreativeTab(OresMonstersAndMore.resources);
+        zircon = new Item().setUnlocalizedName("zircon").setCreativeTab(OresMonstersAndMore.resources);
     }
     public static void register(){
         GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
@@ -253,6 +261,10 @@ public class OmamItems {
         GameRegistry.registerItem(amethyst_chestplate,amethyst_chestplate.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(amethyst_leggings,amethyst_leggings.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(amethyst_boots,amethyst_boots.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(ruby,ruby.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(topaz,topaz.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon,zircon.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst,amethyst.getUnlocalizedName().substring(5));
     }
     public static void registerRenders(){
 
@@ -330,6 +342,10 @@ public class OmamItems {
         registerRender(amethyst_chestplate);
         registerRender(amethyst_leggings);
         registerRender(amethyst_boots);
+        registerRender(ruby);
+        registerRender(topaz);
+        registerRender(zircon);
+        registerRender(amethyst);
 
     }
     public static void registerRender(Item item) {
