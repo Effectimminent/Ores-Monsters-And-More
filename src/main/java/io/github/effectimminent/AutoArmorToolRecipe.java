@@ -24,7 +24,7 @@ public class AutoArmorToolRecipe {
             String bootsName =materialIn + "_boots";
 
             Item ingotgem = (Item) OmamItems.class.getField(ingotgemName).get(null);
-            //Item block = (Item) OmamItems.class.getField(blockName).get(null);
+            Item block = (Item) OmamBlocks.class.getField(blockName).get(null);
             Item sword = (Item) OmamItems.class.getField(swordName).get(null);
             Item pickaxe = (Item) OmamItems.class.getField(pickaxeName).get(null);
             Item axe = (Item) OmamItems.class.getField(axeName).get(null);
@@ -34,9 +34,8 @@ public class AutoArmorToolRecipe {
             Item chestplate = (Item) OmamItems.class.getField(chestplateName).get(null);
             Item leggings = (Item) OmamItems.class.getField(leggingsName).get(null);
             Item boots = (Item) OmamItems.class.getField(bootsName).get(null);
-            System.out.println("RRRRRRRRRRRRRRRRRRRRR"+ingotgem);
+            //System.out.println("RRRRRRRRRRRRRRRRRRRRR"+ingotgem);
 
-            // Use 'sword' as needed...
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {"cc ", "cs "," s ", 'c' ,ingotgem, 's', Items.stick });
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {" cc", " sc"," s ", 'c' ,ingotgem, 's', Items.stick });
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {" cc", " cs"," s ", 'c' ,ingotgem, 's', Items.stick });
@@ -54,8 +53,10 @@ public class AutoArmorToolRecipe {
             GameRegistry.addRecipe(new ItemStack(shovel),new Object[] {"  c", "  s","  s", 'c' ,ingotgem, 's', Items.stick });
 
         } catch (NoSuchFieldException e) {
-            e.printStackTrace();  // Handle the exception appropriately
+            System.out.println("ERROR MISSING ITEM FOR CRAFTING RECIPE INPUT OR OUTPUT");
+            e.printStackTrace();
         } catch (IllegalAccessException e){
+            System.out.println("ERROR MISSING ITEM FOR CRAFTING RECIPE INPUT OR OUTPUT(ITEM IS NOT PUBLIC)");
             e.printStackTrace();
         }
     }
