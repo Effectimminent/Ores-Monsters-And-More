@@ -1,5 +1,6 @@
 package io.github.effectimminent;
 
+import net.minecraft.block.Block;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -24,7 +25,7 @@ public class AutoArmorToolRecipe {
             String bootsName =materialIn + "_boots";
 
             Item ingotgem = (Item) OmamItems.class.getField(ingotgemName).get(null);
-            Item block = (Item) OmamBlocks.class.getField(blockName).get(null);
+            Block block = (Block) OmamBlocks.class.getField(blockName).get(null);
             Item sword = (Item) OmamItems.class.getField(swordName).get(null);
             Item pickaxe = (Item) OmamItems.class.getField(pickaxeName).get(null);
             Item axe = (Item) OmamItems.class.getField(axeName).get(null);
