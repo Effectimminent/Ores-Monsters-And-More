@@ -38,7 +38,18 @@ public class OmamRecipes {
         GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_shovel),new Object[] {"c  ", "s  ","s  ", 'c' ,Items.emerald, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_shovel),new Object[] {" c ", " s "," s ", 'c' ,Items.emerald, 's', Items.stick });
         GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_shovel),new Object[] {"  c", "  s","  s", 'c' ,Items.emerald, 's', Items.stick });
-        
+        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_helmet),new Object[]{"ccc","c c","   ",'c',new ItemStack(Items.dye, 1, 4)});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_helmet),new Object[]{"   ","ccc","c c",'c',new ItemStack(Items.dye, 1, 4)});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_chestplate),new Object[]{"c c","ccc","ccc",'c',new ItemStack(Items.dye, 1, 4)});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_leggings),new Object[]{"ccc","c c","c c",'c',new ItemStack(Items.dye, 1, 4)});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_boots),new Object[]{"   ","c c","c c",'c',new ItemStack(Items.dye, 1, 4)});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.lapis_boots),new Object[]{"c c","c c","   ",'c',new ItemStack(Items.dye, 1, 4)});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_helmet),new Object[]{"ccc","c c","   ",'c',Items.emerald});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_helmet),new Object[]{"   ","ccc","c c",'c',Items.emerald});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_chestplate),new Object[]{"c c","ccc","ccc",'c',Items.emerald});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_leggings),new Object[]{"ccc","c c","c c",'c',Items.emerald});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_boots),new Object[]{"   ","c c","c c",'c',Items.emerald});
+        GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_boots),new Object[]{"c c","c c","   ",'c',Items.emerald});
 
     }
 }
