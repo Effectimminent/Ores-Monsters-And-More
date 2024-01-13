@@ -1,0 +1,2 @@
+step:1 use the gimp templates along with the hsl and alpha values to create new items
+step:2 re encode the files with pinta to save space by adding a black pixel saving removing black pixel and saving again crtl-szs
