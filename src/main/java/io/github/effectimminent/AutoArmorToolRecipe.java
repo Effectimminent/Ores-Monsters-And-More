@@ -52,8 +52,10 @@ public class AutoArmorToolRecipe {
             GameRegistry.addRecipe(new ItemStack(shovel),new Object[] {" c ", " s "," s ", 'c' ,ingotgem, 's', Items.stick });
             GameRegistry.addRecipe(new ItemStack(shovel),new Object[] {"  c", "  s","  s", 'c' ,ingotgem, 's', Items.stick });
 
-        } catch (NoSuchFieldException | IllegalAccessException e) {
+        } catch (NoSuchFieldException e) {
             e.printStackTrace();  // Handle the exception appropriately
+        } catch (IllegalAccessException e){
+            e.printStackTrace();
         }
     }
 }
