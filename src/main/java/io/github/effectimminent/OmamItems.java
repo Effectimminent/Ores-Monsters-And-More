@@ -30,8 +30,8 @@ public class OmamItems {
     public static Item sapphire_shovel;
     public static Item sapphire_hoe;
     public static Item sapphire_sword;
-    public static final Item.ToolMaterial sapphireToolMaterial = EnumHelper.addToolMaterial("sapphireToolMaterial",3,3000,7.0F,2.5F,50);
-    public static ItemArmor.ArmorMaterial sapphireArmorMaterial= EnumHelper.addArmorMaterial("sapphireArmorMaterial","Omam:sapphire_layer_1",66,new int[]{4,9,6,3},50);
+    public static final Item.ToolMaterial sapphireToolMaterial = EnumHelper.addToolMaterial("sapphireToolMaterial",3,3000,7.0F,2.5F,25);
+    public static ItemArmor.ArmorMaterial sapphireArmorMaterial= EnumHelper.addArmorMaterial("sapphireArmorMaterial","Omam:sapphire_layer_1",66,new int[]{4,9,6,3},25);
     public static Item sapphire_helmet;
     public static Item sapphire_chestplate;
     public static Item sapphire_leggings;
@@ -41,8 +41,8 @@ public class OmamItems {
     public static Item emerald_shovel;
     public static Item emerald_hoe;
     public static Item emerald_sword;
-    public static final Item.ToolMaterial emeraldToolMaterial = EnumHelper.addToolMaterial("emeraldToolMaterial",3,750,6.4F,2.4F,100);
-    public static ItemArmor.ArmorMaterial emeraldArmorMaterial= EnumHelper.addArmorMaterial("emeraldArmorMaterial","Omam:emerald_layer_1",26,new int[]{3,7,6,3},100);
+    public static final Item.ToolMaterial emeraldToolMaterial = EnumHelper.addToolMaterial("emeraldToolMaterial",3,750,6.4F,2.4F,50);
+    public static ItemArmor.ArmorMaterial emeraldArmorMaterial= EnumHelper.addArmorMaterial("emeraldArmorMaterial","Omam:emerald_layer_1",26,new int[]{3,7,6,3},50);
     public static Item emerald_helmet;
     public static Item emerald_chestplate;
     public static Item emerald_leggings;
@@ -63,8 +63,8 @@ public class OmamItems {
     public static Item ruby_shovel;
     public static Item ruby_hoe;
     public static Item ruby_sword;
-    public static final Item.ToolMaterial rubyToolMaterial = EnumHelper.addToolMaterial("rubyToolMaterial",3,2950,7.5F,2.75F,50);
-    public static ItemArmor.ArmorMaterial rubyArmorMaterial= EnumHelper.addArmorMaterial("rubyArmorMaterial","Omam:ruby_layer_1",61,new int[]{4,9,6,3},50);
+    public static final Item.ToolMaterial rubyToolMaterial = EnumHelper.addToolMaterial("rubyToolMaterial",3,2950,7.5F,2.75F,25);
+    public static ItemArmor.ArmorMaterial rubyArmorMaterial= EnumHelper.addArmorMaterial("rubyArmorMaterial","Omam:ruby_layer_1",61,new int[]{4,9,6,3},25);
     public static Item ruby_helmet;
     public static Item ruby_chestplate;
     public static Item ruby_leggings;
