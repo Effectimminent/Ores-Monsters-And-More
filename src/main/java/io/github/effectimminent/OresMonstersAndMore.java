@@ -28,6 +28,7 @@ public class OresMonstersAndMore {
         OmamItems.register();
         OmamBlocks.init();
         OmamBlocks.register();
+        AutoArmorToolRecipe.addGear("ruby");
 
     }
 
