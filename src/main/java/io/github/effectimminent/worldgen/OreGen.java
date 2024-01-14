@@ -20,12 +20,12 @@ public class OreGen implements IWorldGenerator {
                 break;
 
             case 0:
-                this.runGenerator(rubyGenerator, world, random, chunkX, chunkZ, 0.01F, 0, 7);
-                this.runGenerator(topazGenerator, world, random, chunkX, chunkZ, 8.4F, 0, 7);
-                this.runGenerator(zirconGenerator, world, random, chunkX, chunkZ, 0.5F, 0, 7);
-                this.runGenerator(sapphireGenerator, world, random, chunkX, chunkZ, 0.1F, 0, 7);
-                this.runGenerator(amethystGenerator, world, random, chunkX, chunkZ, 0.01F, 0, 7);
-                this.runGenerator(copperGenerator, world, random, chunkX, chunkZ, 168.0F, 0, 7);
+                this.runGenerator(rubyGenerator, world, random, chunkX, chunkZ, 0.01F, 0, 255);
+                this.runGenerator(topazGenerator, world, random, chunkX, chunkZ, 8.4F, 0, 255);
+                this.runGenerator(zirconGenerator, world, random, chunkX, chunkZ, 0.5F, 0, 255);
+                this.runGenerator(sapphireGenerator, world, random, chunkX, chunkZ, 0.1F, 0, 255);
+                this.runGenerator(amethystGenerator, world, random, chunkX, chunkZ, 168.0F, 0, 255);
+                this.runGenerator(copperGenerator, world, random, chunkX, chunkZ, 40.0F, 0, 255);
                 break;
 
             case 1:
