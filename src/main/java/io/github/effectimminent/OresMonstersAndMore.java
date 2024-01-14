@@ -42,6 +42,7 @@ public class OresMonstersAndMore {
         AutoArmorToolRecipe.addGear("zircon");
         AutoArmorToolRecipe.addGear("sapphire");
         AutoArmorToolRecipe.addGear("amethyst");
+        proxy.registerWorldGenerators();
     }
 
     @EventHandler
