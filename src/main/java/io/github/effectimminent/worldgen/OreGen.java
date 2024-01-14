@@ -13,6 +13,8 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
+import javax.annotation.Nullable;
+
 public class OreGen implements IWorldGenerator {
 
     @Override
@@ -50,7 +52,12 @@ public class OreGen implements IWorldGenerator {
          topazGenerator   = new WorldGenMinable(OmamBlocks.topaz_ore.getDefaultState(), 10);
          zirconGenerator  = new WorldGenMinable(OmamBlocks.zircon_ore.getDefaultState(), 10);
          sapphireGenerator= new WorldGenMinable(OmamBlocks.sapphire_ore.getDefaultState(), 10);
-        amethystGenerator = new WorldGenMinable(OmamBlocks.amethyst_ore.getDefaultState(), 10);
+        amethystGenerator = new WorldGenMinable(OmamBlocks.amethyst_ore.getDefaultState(), 10, new Predicate<IBlockState>() {
+            @Override
+            public boolean apply(@Nullable IBlockState block) {
+                return block == Blocks.netherrack;
+            }
+        });
 
 
     }
