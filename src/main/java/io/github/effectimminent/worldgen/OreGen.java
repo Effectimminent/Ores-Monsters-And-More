@@ -17,7 +17,7 @@ public class OreGen implements IWorldGenerator {
                          IChunkProvider chunkProvider) {
         switch (world.provider.getDimensionId()) {
             case -1:
-                this.runGenerator(copperGenerator, world, random, chunkX, chunkZ, 40.0F, 0, 255);
+                this.runGenerator(amethystGenerator, world, random, chunkX, chunkZ, 16.0F, 10, 117);
                 break;
 
             case 0:
@@ -25,7 +25,7 @@ public class OreGen implements IWorldGenerator {
                 this.runGenerator(topazGenerator, world, random, chunkX, chunkZ, 8.4F, 0, 255);
                 this.runGenerator(zirconGenerator, world, random, chunkX, chunkZ, 0.5F, 0, 255);
                 this.runGenerator(sapphireGenerator, world, random, chunkX, chunkZ, 0.1F, 0, 255);
-                this.runGenerator(amethystGenerator, world, random, chunkX, chunkZ, 16.0F, 10, 117);
+                this.runGenerator(copperGenerator, world, random, chunkX, chunkZ, 40.0F, 0, 255);
                 break;
 
             case 1:
