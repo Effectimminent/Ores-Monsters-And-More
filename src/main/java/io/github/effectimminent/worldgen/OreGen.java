@@ -22,7 +22,7 @@ public class OreGen implements IWorldGenerator {
                          IChunkProvider chunkProvider) {
         switch (world.provider.getDimensionId()) {
             case -1:
-                this.runGenerator(amethystGenerator, world, random, chunkX, chunkZ, 16.0F, 10, 117);
+                this.runGenerator(amethystGenerator, world, random, chunkX, chunkZ, 68.0F, 10, 117);
                 break;
 
             case 0:
@@ -63,6 +63,9 @@ public class OreGen implements IWorldGenerator {
     }
 
     public void runGenerator(WorldGenerator generator, World world,Random rand, int chunk_X, int chunk_Z, double d, int minHeight, int maxHeight) {
+        if (generator ==amethystGenerator){
+            System.out.println("Generator called");
+        }
         if (minHeight < 0 || maxHeight > 256 || minHeight > maxHeight)
             throw new IllegalArgumentException("Illegal Height Arguments for WorldGenerator");
 
