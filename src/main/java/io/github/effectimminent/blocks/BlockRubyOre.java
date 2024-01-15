@@ -6,10 +6,10 @@ import net.minecraft.block.material.Material;
 public class BlockRubyOre extends Block {
     public BlockRubyOre(Material materialIn){
         super(materialIn);
-        setHardness(4.75F);
+        setHardness(3.0F);
         setHarvestLevel("pickaxe",3);
         this.setLightOpacity(16);
-        this.setResistance(19.5F);
+        this.setResistance(6.0F);
         setLightLevel(0);
         this.setStepSound(soundTypeStone);
     }

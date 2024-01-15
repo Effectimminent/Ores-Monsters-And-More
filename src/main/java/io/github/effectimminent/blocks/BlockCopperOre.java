@@ -7,10 +7,10 @@ import net.minecraft.block.material.Material;
 public class BlockCopperOre extends Block {
     public BlockCopperOre(Material materialIn){
         super(materialIn);
-        setHardness(2.043422733F);
-        setHarvestLevel("pickaxe",2);
+        setHardness(3.0F);
+        setHarvestLevel("pickaxe",1);
         this.setLightOpacity(16);
-        this.setResistance(2.45210728F);
+        this.setResistance(6.0F);
         setLightLevel(0);
         this.setStepSound(soundTypeMetal);
     }
