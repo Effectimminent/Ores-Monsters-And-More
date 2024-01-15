@@ -52,7 +52,7 @@ public class OreGen implements IWorldGenerator {
          topazGenerator   = new WorldGenMinable(OmamBlocks.topaz_ore.getDefaultState(), 10);
          zirconGenerator  = new WorldGenMinable(OmamBlocks.zircon_ore.getDefaultState(), 10);
          sapphireGenerator= new WorldGenMinable(OmamBlocks.sapphire_ore.getDefaultState(), 10);
-         amethystGenerator = new WorldGenMinable(OmamBlocks.amethyst_ore.getDefaultState(), 240);
+         amethystGenerator = new WorldGenMinable(OmamBlocks.amethyst_ore.getDefaultState(), 24);
 
 
     }
