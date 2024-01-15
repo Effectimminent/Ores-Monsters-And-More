@@ -111,7 +111,7 @@ public class OmamItems {
     public static Item obsidian_shovel;
     public static Item obsidian_hoe;
     public static Item obsidian_sword;
-    public static ItemArmor.ArmorMaterial obsidianArmorMaterial= EnumHelper.addArmorMaterial("obsidianArmorMaterial","Omam:obsidian_layer_1",1,new int[]{0,0,0,0},10);
+    public static ItemArmor.ArmorMaterial obsidianArmorMaterial= EnumHelper.addArmorMaterial("obsidianArmorMaterial","Omam:obsidian_layer_1",1,new int[]{1,1,1,1},10);
     public static final Item.ToolMaterial obsidianToolMaterial = EnumHelper.addToolMaterial("obsidianToolMaterial",4,100,16.0F,6.0F,10);
     public static Item obsidian_helmet;
     public static Item obsidian_chestplate;
