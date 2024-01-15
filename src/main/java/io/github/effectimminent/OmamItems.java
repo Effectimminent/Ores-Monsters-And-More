@@ -96,8 +96,8 @@ public class OmamItems {
     public static Item amethyst_shovel;
     public static Item amethyst_hoe;
     public static Item amethyst_sword;
-    public static ItemArmor.ArmorMaterial amethystArmorMaterial= EnumHelper.addArmorMaterial("amethystArmorMaterial","Omam:amethyst_layer_1",6,new int[]{1,1,1,1},500);
-    public static final Item.ToolMaterial amethystToolMaterial = EnumHelper.addToolMaterial("amethystToolMaterial",3,300,6.4F,2.4F,500);
+    public static ItemArmor.ArmorMaterial amethystArmorMaterial= EnumHelper.addArmorMaterial("amethystArmorMaterial","Omam:amethyst_layer_1",6,new int[]{1,1,1,1},50);
+    public static final Item.ToolMaterial amethystToolMaterial = EnumHelper.addToolMaterial("amethystToolMaterial",3,300,6.4F,2.4F,50);
     public static Item amethyst_helmet;
     public static Item amethyst_chestplate;
     public static Item amethyst_leggings;
@@ -106,6 +106,17 @@ public class OmamItems {
     public static Item topaz;
     public static Item zircon;
     public static Item amethyst;
+    public static Item obsidian_pickaxe;
+    public static Item obsidian_axe;
+    public static Item obsidian_shovel;
+    public static Item obsidian_hoe;
+    public static Item obsidian_sword;
+    public static ItemArmor.ArmorMaterial obsidianArmorMaterial= EnumHelper.addArmorMaterial("obsidianArmorMaterial","Omam:obsidian_layer_1",1,new int[]{0,0,0,0},10);
+    public static final Item.ToolMaterial obsidianToolMaterial = EnumHelper.addToolMaterial("obsidianToolMaterial",4,100,16.0F,6.0F,10);
+    public static Item obsidian_helmet;
+    public static Item obsidian_chestplate;
+    public static Item obsidian_leggings;
+    public static Item obsidian_boots;
     public static void init(){
         copper_ingot = new Item().setUnlocalizedName("copper_ingot").setCreativeTab(OresMonstersAndMore.resources);
         copper_pickaxe = new ItemCopperPickaxe(copperToolMaterial).setUnlocalizedName("copper_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
@@ -185,6 +196,15 @@ public class OmamItems {
         ruby = new Item().setUnlocalizedName("ruby").setCreativeTab(OresMonstersAndMore.resources);
         topaz = new Item().setUnlocalizedName("topaz").setCreativeTab(OresMonstersAndMore.resources);
         zircon = new Item().setUnlocalizedName("zircon").setCreativeTab(OresMonstersAndMore.resources);
+        obsidian_pickaxe = new ItemObsidianPickaxe(obsidianToolMaterial).setUnlocalizedName("obsidian_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
+        obsidian_axe = new ItemObsidianAxe(obsidianToolMaterial).setUnlocalizedName("obsidian_axe").setCreativeTab(OresMonstersAndMore.gear);
+        obsidian_shovel = new ItemObsidianShovel(obsidianToolMaterial).setUnlocalizedName("obsidian_shovel").setCreativeTab(OresMonstersAndMore.gear);
+        obsidian_hoe = new ItemObsidianHoe(obsidianToolMaterial).setUnlocalizedName("obsidian_hoe").setCreativeTab(OresMonstersAndMore.gear);
+        obsidian_sword = new ItemObsidianSword(obsidianToolMaterial).setUnlocalizedName("obsidian_sword").setCreativeTab(OresMonstersAndMore.gear);
+        obsidian_helmet = new ItemObsidianArmor(obsidianArmorMaterial,0,0).setUnlocalizedName("obsidian_helmet").setCreativeTab(OresMonstersAndMore.gear);
+        obsidian_chestplate = new ItemObsidianArmor(obsidianArmorMaterial,0,1).setUnlocalizedName("obsidian_chestplate").setCreativeTab(OresMonstersAndMore.gear);
+        obsidian_leggings = new ItemObsidianArmor(obsidianArmorMaterial,1,2).setUnlocalizedName("obsidian_leggings").setCreativeTab(OresMonstersAndMore.gear);
+        obsidian_boots = new ItemObsidianArmor(obsidianArmorMaterial,0,3).setUnlocalizedName("obsidian_boots").setCreativeTab(OresMonstersAndMore.gear);
     }
     public static void register(){
         GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
@@ -265,6 +285,15 @@ public class OmamItems {
         GameRegistry.registerItem(topaz,topaz.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(zircon,zircon.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(amethyst,amethyst.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(obsidian_pickaxe,obsidian_pickaxe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(obsidian_axe,obsidian_axe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(obsidian_shovel,obsidian_shovel.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(obsidian_hoe,obsidian_hoe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(obsidian_sword,obsidian_sword.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(obsidian_helmet,obsidian_helmet.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(obsidian_chestplate,obsidian_chestplate.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(obsidian_leggings,obsidian_leggings.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(obsidian_boots,obsidian_boots.getUnlocalizedName().substring(5));
     }
     public static void registerRenders(){
 
@@ -346,6 +375,15 @@ public class OmamItems {
         registerRender(topaz);
         registerRender(zircon);
         registerRender(amethyst);
+        registerRender(obsidian_pickaxe);
+        registerRender(obsidian_axe);
+        registerRender(obsidian_shovel);
+        registerRender(obsidian_hoe);
+        registerRender(obsidian_sword);
+        registerRender(obsidian_helmet);
+        registerRender(obsidian_chestplate);
+        registerRender(obsidian_leggings);
+        registerRender(obsidian_boots);
 
     }
     public static void registerRender(Item item) {
