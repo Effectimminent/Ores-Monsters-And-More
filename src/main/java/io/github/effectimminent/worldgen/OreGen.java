@@ -22,7 +22,6 @@ public class OreGen implements IWorldGenerator {
                          IChunkProvider chunkProvider) {
         switch (world.provider.getDimensionId()) {
             case -1:
-                this.runGenerator(amethystGenerator, world, random, chunkX, chunkZ, 68.0F, 10, 117);
                 break;
 
             case 0:
@@ -31,6 +30,7 @@ public class OreGen implements IWorldGenerator {
                 this.runGenerator(zirconGenerator, world, random, chunkX, chunkZ, 0.5F, 0, 255);
                 this.runGenerator(sapphireGenerator, world, random, chunkX, chunkZ, 0.1F, 0, 255);
                 this.runGenerator(copperGenerator, world, random, chunkX, chunkZ, 40.0F, 0, 255);
+                this.runGenerator(amethystGenerator, world, random, chunkX, chunkZ, 16.0F, 10, 117);
                 break;
 
             case 1:
@@ -52,12 +52,7 @@ public class OreGen implements IWorldGenerator {
          topazGenerator   = new WorldGenMinable(OmamBlocks.topaz_ore.getDefaultState(), 10);
          zirconGenerator  = new WorldGenMinable(OmamBlocks.zircon_ore.getDefaultState(), 10);
          sapphireGenerator= new WorldGenMinable(OmamBlocks.sapphire_ore.getDefaultState(), 10);
-        amethystGenerator = new WorldGenMinable(OmamBlocks.amethyst_ore.getDefaultState(), 10, new Predicate<IBlockState>() {
-            @Override
-            public boolean apply(@Nullable IBlockState block) {
-                return block == Blocks.netherrack.getDefaultState().getBlock();
-            }
-        });
+         amethystGenerator = new WorldGenMinable(OmamBlocks.amethyst_ore.getDefaultState(), 24);
 
 
     }
