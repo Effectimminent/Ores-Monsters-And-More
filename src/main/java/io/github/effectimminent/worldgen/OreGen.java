@@ -55,7 +55,7 @@ public class OreGen implements IWorldGenerator {
         amethystGenerator = new WorldGenMinable(OmamBlocks.amethyst_ore.getDefaultState(), 10, new Predicate<IBlockState>() {
             @Override
             public boolean apply(@Nullable IBlockState block) {
-                return block == Blocks.netherrack;
+                return block == Blocks.netherrack.getDefaultState().getBlock();
             }
         });
 
