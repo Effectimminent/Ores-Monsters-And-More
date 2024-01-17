@@ -2,7 +2,7 @@
 Source installation information for modders
 -------------------------------------------
 This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
+some small patches to the vanilla MCP source code, giving you and it access
 to some of the data and functions you need to build a successful mod.
 
 Note also that the patches are built against "unrenamed" MCP source code (aka
@@ -35,7 +35,7 @@ Step 4: The final step is to open Eclipse and switch your workspace to /eclipse/
 
 If at any point you are missing libraries in your IDE, or you've run into problems you can run "gradlew --refresh-dependencies" to refresh the local cache. "gradlew clean" to reset everything {this does not effect your code} and then start the processs again.
 
-Should it still not work, 
+Should it still not work,
 Refer to #ForgeGradle on EsperNet for more information about the gradle environment.
 
 Tip:
