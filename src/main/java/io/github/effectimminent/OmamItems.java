@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class OmamItems {
     //copper items
-    public static Item copper_ingot;
+    //public static Item copper_ingot;
     public static Item copper_pickaxe;
     public static Item copper_axe;
     public static Item copper_shovel;
