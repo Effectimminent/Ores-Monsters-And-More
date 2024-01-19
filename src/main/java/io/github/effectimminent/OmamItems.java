@@ -207,7 +207,7 @@ public class OmamItems {
         obsidian_boots = new ItemObsidianArmor(obsidianArmorMaterial,0,3).setUnlocalizedName("obsidian_boots").setCreativeTab(OresMonstersAndMore.gear);
     }
     public static void register(){
-        GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
+        //GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(copper_pickaxe,copper_pickaxe.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(copper_axe,copper_axe.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(copper_shovel,copper_shovel.getUnlocalizedName().substring(5));
@@ -297,7 +297,7 @@ public class OmamItems {
     }
     public static void registerRenders(){
 
-        registerRender(copper_ingot);
+        //registerRender(copper_ingot);
         registerRender(copper_pickaxe);
         registerRender(copper_axe);
         registerRender(copper_shovel);
