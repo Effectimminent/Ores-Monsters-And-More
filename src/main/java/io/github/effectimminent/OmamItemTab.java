@@ -1,6 +1,7 @@
 package io.github.effectimminent;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 public class OmamItemTab extends CreativeTabs {
@@ -10,6 +11,6 @@ public class OmamItemTab extends CreativeTabs {
 
     @Override
     public Item getTabIconItem() {
-        return OmamItems.copper_ingot;
+        return Items.apple;
     }
 }
