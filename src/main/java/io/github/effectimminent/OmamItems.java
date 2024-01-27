@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class OmamItems {
     //copper items
-    //public static Item copper_ingot;
+    public static Item copper_ingot;
     public static Item copper_pickaxe;
     public static Item copper_axe;
     public static Item copper_shovel;
@@ -118,7 +118,7 @@ public class OmamItems {
     public static Item obsidian_leggings;
     public static Item obsidian_boots;
     public static void init(){
-        //copper_ingot = new Item().setUnlocalizedName("copper_ingot").setCreativeTab(OresMonstersAndMore.resources);
+        copper_ingot = new Item().setUnlocalizedName("copper_ingot").setCreativeTab(OresMonstersAndMore.resources);
         copper_pickaxe = new ItemCopperPickaxe(copperToolMaterial).setUnlocalizedName("copper_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
         copper_axe = new ItemCopperAxe(copperToolMaterial).setUnlocalizedName("copper_axe").setCreativeTab(OresMonstersAndMore.gear);
         copper_shovel = new ItemCopperShovel(copperToolMaterial).setUnlocalizedName("copper_shovel").setCreativeTab(OresMonstersAndMore.gear);
@@ -207,7 +207,7 @@ public class OmamItems {
         obsidian_boots = new ItemObsidianArmor(obsidianArmorMaterial,0,3).setUnlocalizedName("obsidian_boots").setCreativeTab(OresMonstersAndMore.gear);
     }
     public static void register(){
-        //GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(copper_pickaxe,copper_pickaxe.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(copper_axe,copper_axe.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(copper_shovel,copper_shovel.getUnlocalizedName().substring(5));
@@ -297,7 +297,7 @@ public class OmamItems {
     }
     public static void registerRenders(){
 
-        //registerRender(copper_ingot);
+        registerRender(copper_ingot);
         registerRender(copper_pickaxe);
         registerRender(copper_axe);
         registerRender(copper_shovel);

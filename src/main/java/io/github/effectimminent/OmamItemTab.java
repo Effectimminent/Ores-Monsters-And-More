@@ -11,6 +11,6 @@ public class OmamItemTab extends CreativeTabs {
 
     @Override
     public Item getTabIconItem() {
-        return Items.apple;
+        return OmamItems.copper_ingot;
     }
 }
