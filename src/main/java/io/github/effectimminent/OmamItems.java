@@ -117,6 +117,18 @@ public class OmamItems {
     public static Item obsidian_chestplate;
     public static Item obsidian_leggings;
     public static Item obsidian_boots;
+    public static Item silver_ingot;
+    public static Item silver_pickaxe;
+    public static Item silver_axe;
+    public static Item silver_shovel;
+    public static Item silver_hoe;
+    public static Item silver_sword;
+    public static ItemArmor.ArmorMaterial silverArmorMaterial= EnumHelper.addArmorMaterial("silverArmorMaterial","Omam:silver_layer_1",1,new int[]{1,1,1,1},10);
+    public static final Item.ToolMaterial silverToolMaterial = EnumHelper.addToolMaterial("silverToolMaterial",4,100,16.0F,6.0F,10);
+    public static Item silver_helmet;
+    public static Item silver_chestplate;
+    public static Item silver_leggings;
+    public static Item silver_boots;
     public static void init(){
         copper_ingot = new Item().setUnlocalizedName("copper_ingot").setCreativeTab(OresMonstersAndMore.resources);
         copper_pickaxe = new ItemCopperPickaxe(copperToolMaterial).setUnlocalizedName("copper_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
@@ -205,6 +217,18 @@ public class OmamItems {
         obsidian_chestplate = new ItemObsidianArmor(obsidianArmorMaterial,0,1).setUnlocalizedName("obsidian_chestplate").setCreativeTab(OresMonstersAndMore.gear);
         obsidian_leggings = new ItemObsidianArmor(obsidianArmorMaterial,1,2).setUnlocalizedName("obsidian_leggings").setCreativeTab(OresMonstersAndMore.gear);
         obsidian_boots = new ItemObsidianArmor(obsidianArmorMaterial,0,3).setUnlocalizedName("obsidian_boots").setCreativeTab(OresMonstersAndMore.gear);
+        silver_ingot= new Item().setUnlocalizedName("silver_ingot").setCreativeTab(OresMonstersAndMore.resources);
+        silver_pickaxe = new ItemSilverPickaxe(silverToolMaterial).setUnlocalizedName("silver_pickaxe").setCreativeTab(OresMonstersAndMore.gear);
+        silver_axe = new ItemSilverAxe(silverToolMaterial).setUnlocalizedName("silver_axe").setCreativeTab(OresMonstersAndMore.gear);
+        silver_shovel = new ItemSilverShovel(silverToolMaterial).setUnlocalizedName("silver_shovel").setCreativeTab(OresMonstersAndMore.gear) ;
+        silver_hoe = new ItemSilverHoe(silverToolMaterial).setUnlocalizedName("silver_hoe").setCreativeTab(OresMonstersAndMore.gear);
+        silver_sword = new ItemSilverSword(silverToolMaterial).setUnlocalizedName("silver_sword").setCreativeTab(OresMonstersAndMore.gear);
+        silver_helmet = new ItemSilverArmor(silverArmorMaterial,0,0).setUnlocalizedName("silver_helmet").setCreativeTab(OresMonstersAndMore.gear);
+        silver_chestplate = new ItemSilverArmor(silverArmorMaterial,0,1).setUnlocalizedName("silver_chestplate").setCreativeTab(OresMonstersAndMore.gear);
+        silver_leggings = new ItemSilverArmor(silverArmorMaterial,1,2).setUnlocalizedName("silver_leggings").setCreativeTab(OresMonstersAndMore.gear);
+        silver_boots = new ItemSilverArmor(silverArmorMaterial,0,3).setUnlocalizedName("silver_boots").setCreativeTab(OresMonstersAndMore.gear);
+    
+        
     }
     public static void register(){
         GameRegistry.registerItem(copper_ingot,copper_ingot.getUnlocalizedName().substring(5));
@@ -294,6 +318,17 @@ public class OmamItems {
         GameRegistry.registerItem(obsidian_chestplate,obsidian_chestplate.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(obsidian_leggings,obsidian_leggings.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(obsidian_boots,obsidian_boots.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(zircon,zircon.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(amethyst,amethyst.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(silver_pickaxe,silver_pickaxe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(silver_axe,silver_axe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(silver_shovel,silver_shovel.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(silver_hoe,silver_hoe.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(silver_sword,silver_sword.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(silver_helmet,silver_helmet.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(silver_chestplate,silver_chestplate.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(silver_leggings,silver_leggings.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(silver_boots,silver_boots.getUnlocalizedName().substring(5));
     }
     public static void registerRenders(){
 
@@ -384,6 +419,16 @@ public class OmamItems {
         registerRender(obsidian_chestplate);
         registerRender(obsidian_leggings);
         registerRender(obsidian_boots);
+        registerRender(silver_ingot);
+        registerRender(silver_pickaxe);
+        registerRender(silver_axe);
+        registerRender(silver_shovel);
+        registerRender(silver_hoe);
+        registerRender(silver_sword);
+        registerRender(silver_helmet);
+        registerRender(silver_chestplate);
+        registerRender(silver_leggings);
+        registerRender(silver_boots);
 
     }
     public static void registerRender(Item item) {
