@@ -10,9 +10,12 @@ import java.lang.reflect.Field;
 
 public class AutoArmorToolRecipe {
 
-    public static void addGear(String materialIn) {
+    public static void addGear(String materialIn, Boolean isingot) {
         try {
-            String ingotgemName =materialIn;
+            String ingotgemName = materialIn;
+            if(isingot == Boolean.TRUE) {
+                ingotgemName = materialIn+"_ingot";
+            }
             String blockName =materialIn + "_block";
             String swordName =materialIn + "_sword";
             String pickaxeName =materialIn + "_pickaxe";
