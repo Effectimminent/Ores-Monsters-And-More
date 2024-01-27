@@ -123,8 +123,8 @@ public class OmamItems {
     public static Item silver_shovel;
     public static Item silver_hoe;
     public static Item silver_sword;
-    public static ItemArmor.ArmorMaterial silverArmorMaterial= EnumHelper.addArmorMaterial("silverArmorMaterial","Omam:silver_layer_1",1,new int[]{1,1,1,1},10);
-    public static final Item.ToolMaterial silverToolMaterial = EnumHelper.addToolMaterial("silverToolMaterial",4,100,16.0F,6.0F,10);
+    public static ItemArmor.ArmorMaterial silverArmorMaterial= EnumHelper.addArmorMaterial("silverArmorMaterial","Omam:silver_layer_1",4,new int[]{1,3,2,3},25);
+    public static final Item.ToolMaterial silverToolMaterial = EnumHelper.addToolMaterial("silverToolMaterial",1,75,1.0F,0.5F,25);
     public static Item silver_helmet;
     public static Item silver_chestplate;
     public static Item silver_leggings;

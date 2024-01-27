@@ -23,14 +23,9 @@ public class ItemSilverArmor extends ItemArmor {
         return "Omam:textures/model/armor/silver_armor_layer_1.png";
     }
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemstack) {
-        if(itemstack.getItem() == OmamItems.silver_helmet &&itemstack.getItem() == OmamItems.silver_chestplate &&itemstack.getItem() == OmamItems.silver_leggings &&itemstack.getItem() == OmamItems.silver_boots) {
-            effectPlayer(player, Potion.poison);
+        if(itemstack.getItem() == OmamItems.silver_chestplate&&itemstack.getItem() == OmamItems.silver_leggings) {
+            player.removePotionEffect(19);
         }
         super.onArmorTick(world, player, itemstack);
-    }
-    private void effectPlayer(EntityLivingBase entity, Potion potion) {
-        //Always effect for 8 seconds, then refresh
-        if (entity.getActivePotionEffect(potion) == null || entity.getActivePotionEffect(potion).getDuration() <= 1)
-            entity.removePotionEffect(19);
     }
 }
