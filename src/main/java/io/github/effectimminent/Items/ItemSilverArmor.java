@@ -23,7 +23,7 @@ public class ItemSilverArmor extends ItemArmor {
         return "Omam:textures/model/armor/silver_armor_layer_1.png";
     }
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemstack) {
-        if(itemstack.getItem() == OmamItems.silver_chestplate&&itemstack.getItem() == OmamItems.silver_leggings) {
+        if(itemstack.getItem() == OmamItems.silver_chestplate || itemstack.getItem() == OmamItems.silver_leggings || itemstack.getItem() == OmamItems.silver_helmet || itemstack.getItem() == OmamItems.silver_boots) {
             player.removePotionEffect(19);
         }
         super.onArmorTick(world, player, itemstack);
