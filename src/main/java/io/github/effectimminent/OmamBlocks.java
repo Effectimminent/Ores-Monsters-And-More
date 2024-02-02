@@ -36,7 +36,7 @@ public class OmamBlocks {
         sapphire_ore = new BlockSapphireOre(Material.rock).setUnlocalizedName("sapphire_ore").setCreativeTab(OresMonstersAndMore.items);
         amethyst_ore = new BlockAmethystOre(Material.rock).setUnlocalizedName("amethyst_ore").setCreativeTab(OresMonstersAndMore.items);
         copper_ore = new BlockCopperOre(Material.rock).setUnlocalizedName("copper_ore").setCreativeTab(OresMonstersAndMore.items);
-        silver_ore = new BlockSilverOre(Material.rock).setUnlocalizedName("Silver Ore").setCreativeTab(OresMonstersAndMore.items);
+        silver_ore = new BlockSilverOre(Material.rock).setUnlocalizedName("silver_ore").setCreativeTab(OresMonstersAndMore.items);
     }
     public static void register(){
         GameRegistry.registerBlock(copper_block, copper_block.getUnlocalizedName().substring(5));
