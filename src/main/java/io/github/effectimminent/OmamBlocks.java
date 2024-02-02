@@ -15,6 +15,7 @@ public class OmamBlocks {
     public static Block topaz_block;
     public static Block zircon_block;
     public static Block amethyst_block;
+    public static Block silver_block;
     public static Block ruby_ore;
     public static Block topaz_ore;
     public static Block zircon_ore;
@@ -30,6 +31,7 @@ public class OmamBlocks {
         topaz_block = new BlockTopazBlock(Material.rock).setUnlocalizedName("topaz_block").setCreativeTab(OresMonstersAndMore.items);
         zircon_block = new BlockZirconBlock(Material.rock).setUnlocalizedName("zircon_block").setCreativeTab(OresMonstersAndMore.items);
         amethyst_block = new BlockAmethystBlock(Material.rock).setUnlocalizedName("amethyst_block").setCreativeTab(OresMonstersAndMore.items);
+        silver_block = new BlockSilverBlock(Material.rock).setUnlocalizedName("silver_block").setCreativeTab(OresMonstersAndMore.items);
         ruby_ore = new BlockRubyOre(Material.rock).setUnlocalizedName("ruby_ore").setCreativeTab(OresMonstersAndMore.items);
         topaz_ore = new BlockTopazOre(Material.rock).setUnlocalizedName("topaz_ore").setCreativeTab(OresMonstersAndMore.items);
         zircon_ore = new BlockZirconOre(Material.rock).setUnlocalizedName("zircon_ore").setCreativeTab(OresMonstersAndMore.items);
@@ -45,6 +47,7 @@ public class OmamBlocks {
         GameRegistry.registerBlock(topaz_block, topaz_block.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(zircon_block,zircon_block.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(amethyst_block,amethyst_block.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(silver_block,silver_block.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(copper_ore, copper_ore.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(sapphire_ore, sapphire_ore.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(ruby_ore, ruby_ore.getUnlocalizedName().substring(5));
@@ -60,6 +63,7 @@ public class OmamBlocks {
         registerRender(topaz_block,0,"topaz_block");
         registerRender(zircon_block,0,"zircon_block");
         registerRender(amethyst_block,0,"amethyst_block");
+        registerRender(silver_block,0,"silver_block");
         registerRender(copper_ore,0,"copper_ore");
         registerRender(sapphire_ore,0,"sapphire_ore");
         registerRender(ruby_ore,0,"ruby_ore");
