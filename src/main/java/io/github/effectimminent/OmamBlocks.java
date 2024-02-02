@@ -21,6 +21,7 @@ public class OmamBlocks {
     public static Block sapphire_ore;
     public static Block amethyst_ore;
     public static Block copper_ore;
+    public static Block silver_ore;
 
     public static void init() {
         copper_block = new BlockCopperBlock(Material.iron).setUnlocalizedName("copper_block").setCreativeTab(OresMonstersAndMore.items);
@@ -35,6 +36,7 @@ public class OmamBlocks {
         sapphire_ore = new BlockSapphireOre(Material.rock).setUnlocalizedName("sapphire_ore").setCreativeTab(OresMonstersAndMore.items);
         amethyst_ore = new BlockAmethystOre(Material.rock).setUnlocalizedName("amethyst_ore").setCreativeTab(OresMonstersAndMore.items);
         copper_ore = new BlockCopperOre(Material.rock).setUnlocalizedName("copper_ore").setCreativeTab(OresMonstersAndMore.items);
+        silver_ore = new BlockSilverOre(Material.rock).setUnlocalizedName("Silver Ore").setCreativeTab(OresMonstersAndMore.items);
     }
     public static void register(){
         GameRegistry.registerBlock(copper_block, copper_block.getUnlocalizedName().substring(5));
@@ -49,6 +51,7 @@ public class OmamBlocks {
         GameRegistry.registerBlock(topaz_ore, topaz_ore.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(zircon_ore,zircon_ore.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(amethyst_ore,amethyst_ore.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(silver_ore,silver_ore.getUnlocalizedName().substring(5));
     }
     public static void registerRenders(){
         registerRender(copper_block,0,"copper_block");
@@ -63,6 +66,8 @@ public class OmamBlocks {
         registerRender(topaz_ore,0,"topaz_ore");
         registerRender(zircon_ore,0,"zircon_ore");
         registerRender(amethyst_ore,0,"amethyst_ore");
+        registerRender(amethyst_ore,0,"amethyst_ore");
+        registerRender(silver_ore,0,"silver_ore");
     }
     public static void registerRender(Block block,int meta,String filename)
     {

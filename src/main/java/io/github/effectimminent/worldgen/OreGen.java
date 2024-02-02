@@ -31,6 +31,7 @@ public class OreGen implements IWorldGenerator {
                 this.runGenerator(sapphireGenerator, world, random, chunkX, chunkZ, 0.1F, 0, 255);
                 this.runGenerator(copperGenerator, world, random, chunkX, chunkZ, 40.0F, 0, 255);
                 this.runGenerator(amethystGenerator, world, random, chunkX, chunkZ, 1.6F, 10, 117);
+
                 break;
 
             case 1:
