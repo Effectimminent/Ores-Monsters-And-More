@@ -36,13 +36,13 @@ public class OresMonstersAndMore {
     {
         proxy.registerRenders();
         OmamRecipes.register();
-        AutoArmorToolRecipe.addGear("copper",false);
+        AutoArmorToolRecipe.addGear("copper",true);
         AutoArmorToolRecipe.addGear("ruby",false);
         AutoArmorToolRecipe.addGear("topaz",false);
         AutoArmorToolRecipe.addGear("zircon",false);
         AutoArmorToolRecipe.addGear("sapphire",false);
         AutoArmorToolRecipe.addGear("amethyst",false);
-        AutoArmorToolRecipe.addGear("copper",true);
+        AutoArmorToolRecipe.addGear("silver",true);
         proxy.registerWorldGenerators();
     }
 
