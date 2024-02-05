@@ -329,6 +329,7 @@ public class OmamItems {
         GameRegistry.registerItem(silver_chestplate,silver_chestplate.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(silver_leggings,silver_leggings.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(silver_boots,silver_boots.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(silver_ingot,silver_ingot.getUnlocalizedName().substring(5));
     }
     public static void registerRenders(){
 

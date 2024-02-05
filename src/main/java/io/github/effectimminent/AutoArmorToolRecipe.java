@@ -26,8 +26,8 @@ public class AutoArmorToolRecipe {
             String chestplateName =materialIn + "_chestplate";
             String leggingsName =materialIn + "_leggings";
             String bootsName =materialIn + "_boots";
-            System.out.println("RRRRRRRRRRRRRRRRRRRRR"+ingotgemName);
-            System.out.println("RRRRRRRRRRRRRRRRRRRRR"+isingot);
+            //System.out.println("RRRRRRRRRRRRRRRRRRRRR"+ingotgemName);
+            //System.out.println("RRRRRRRRRRRRRRRRRRRRR"+isingot);
 
             Item ingotgem = (Item) OmamItems.class.getField(ingotgemName).get(null);
             Block block = (Block) OmamBlocks.class.getField(blockName).get(null);
@@ -40,7 +40,7 @@ public class AutoArmorToolRecipe {
             Item chestplate = (Item) OmamItems.class.getField(chestplateName).get(null);
             Item leggings = (Item) OmamItems.class.getField(leggingsName).get(null);
             Item boots = (Item) OmamItems.class.getField(bootsName).get(null);
-            System.out.println("RRRRRRRRRRRRRRRRRRRRR"+ingotgem);
+            //System.out.println("RRRRRRRRRRRRRRRRRRRRR"+ingotgem);
 
             GameRegistry.addRecipe(new ItemStack(block),new Object[] {"ccc", "ccc","ccc", 'c' ,ingotgem});
             GameRegistry.addRecipe(new ItemStack(axe),new Object[] {"cc ", "cs "," s ", 'c' ,ingotgem, 's', Items.stick });
