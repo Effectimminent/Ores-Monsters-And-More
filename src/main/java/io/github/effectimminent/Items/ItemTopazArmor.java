@@ -23,7 +23,7 @@ public class ItemTopazArmor extends ItemArmor {
             if (player.getCurrentArmor(2) != null && player.getCurrentArmor(2).getItem().equals(OmamItems.topaz_chestplate)) {
                 if (player.getCurrentArmor(3) != null && player.getCurrentArmor(3).getItem().equals(OmamItems.topaz_helmet)) {
                     if (player.getCurrentArmor(0) != null && player.getCurrentArmor(0).getItem().equals(OmamItems.topaz_boots)) {
-                        player.removePotionEffect(120);}
+                        player.removePotionEffect(20);}
                 }
             }
         }
