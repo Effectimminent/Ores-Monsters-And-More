@@ -23,7 +23,7 @@ public class ItemSilverArmor extends ItemArmor {
         return "Omam:textures/model/armor/silver_armor_layer_1.png";
     }
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemstack) {
-        if (player.getCurrentArmor(0) != null && player.getCurrentArmor(1).getItem().equals(OmamItems.silver_leggings)) {
+        if (player.getCurrentArmor(1) != null && player.getCurrentArmor(1).getItem().equals(OmamItems.silver_leggings)) {
             if (player.getCurrentArmor(2) != null && player.getCurrentArmor(2).getItem().equals(OmamItems.silver_chestplate)) {
                 if (player.getCurrentArmor(3) != null && player.getCurrentArmor(3).getItem().equals(OmamItems.silver_helmet)) {
                     if (player.getCurrentArmor(0) != null && player.getCurrentArmor(0).getItem().equals(OmamItems.silver_boots)) {
