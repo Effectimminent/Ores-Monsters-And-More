@@ -4,6 +4,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraft.item.crafting.FurnaceRecipes;
+
 
 public class BlockEventManager {
     @SubscribeEvent
@@ -24,5 +26,4 @@ public class BlockEventManager {
             }
         }
     }
-}
-*/
+}*/
