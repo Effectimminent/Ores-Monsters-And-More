@@ -1,5 +1,6 @@
 package io.github.effectimminent;
 
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
@@ -50,6 +51,17 @@ public class OmamRecipes {
         GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_leggings),new Object[]{"ccc","c c","c c",'c',Items.emerald});
         GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_boots),new Object[]{"   ","c c","c c",'c',Items.emerald});
         GameRegistry.addRecipe(new ItemStack(OmamItems.emerald_boots),new Object[]{"c c","c c","   ",'c',Items.emerald});
+
+    }
+    public static void registerFurnaceRecipes()
+    {
+        GameRegistry.addSmelting(OmamBlocks.copper_ore, new ItemStack(OmamItems.copper_ingot), 350.0F);
+        GameRegistry.addSmelting(OmamBlocks.ruby_ore, new ItemStack(OmamItems.copper_ingot), 350.0F);
+        GameRegistry.addSmelting(OmamBlocks.topaz_ore, new ItemStack(OmamItems.copper_ingot), 350.0F);
+        GameRegistry.addSmelting(OmamBlocks.zircon_ore, new ItemStack(OmamItems.copper_ingot), 350.0F);
+        GameRegistry.addSmelting(OmamBlocks.sapphire_ore, new ItemStack(OmamItems.copper_ingot), 350.0F);
+        GameRegistry.addSmelting(OmamBlocks.amethyst_ore, new ItemStack(OmamItems.copper_ingot), 350.0F);
+        GameRegistry.addSmelting(OmamBlocks.silver_ore, new ItemStack(OmamItems.copper_ingot), 350.0F);
 
     }
 }
